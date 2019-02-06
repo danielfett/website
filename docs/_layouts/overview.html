@@ -1,0 +1,32 @@
+---
+layout: default
+class: fullwidth
+---
+
+<div class="feature-wrapper js-feature-wrapper">
+    <div class="feature-visual">
+        <img src="/img/visuals/feature-default.jpg" alt="">
+    </div>
+    <div class="feature-content text-center">
+        <div class="spacer spacer-xs">&nbsp;</div>
+    </div>
+</div>
+
+<div class="container">
+    <div  class="container">
+        <div  class="row">
+            <div  class="col-sm-24">
+                <h1>Publications and Articles</h1>
+                <ul>
+                    {% for link in site.posts %}
+                    <li>
+                        <b>{{ link.date|date:"%Y-%m-%d" }}</b> &nbsp; {% if link.type %}{{ link.type }} | {% endif %} <a href="{{ link.url }}">{{ link.title }}</a><br>
+                        
+                        
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

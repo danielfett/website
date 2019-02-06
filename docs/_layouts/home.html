@@ -1,0 +1,37 @@
+---
+layout: default
+class: home
+---
+<div class="feature-wrapper js-feature-wrapper">
+    <div class="feature-visual">
+        <img src="/img/visuals/feature-default.jpg" alt="">
+    </div>
+    <div class="feature-content text-center">
+        <div class="spacer spacer-xs">&nbsp;</div>
+    </div>
+</div>
+
+<div style="" class="row">
+    <div class="featurebox col-md-8 col-md-offset-12 col-lg-6 col-lg-offset-15">
+        <img src="/img/me_120.png" alt="" class="portrait">
+        <h1 style="text-align: center;">Welcome!</h1>
+        <p style="text-align: center;"><a href="/en/about-me/">More about me ...</a></p>
+    </div>
+</div>
+
+{{ content }}
+
+
+<div class="container">
+    <div  class="container">
+        <div  class="row">
+            {% for link in page.links %}
+            <div  class="col-sm-{{ link.width }}">
+	        <h1 style="text-align: center;"><i class="{{ link.icon }}">​</i> <a href="{{ link.href }}">{{ link.name }}</a></h1>
+                <p style="text-align: center;">{{ link.description }}</p>
+            </div>
+
+            {% endfor %}
+        </div>
+    </div>
+</div>
