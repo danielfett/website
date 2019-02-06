@@ -4,6 +4,9 @@ title: 'The Web SSO Standard OpenID Connect: In-Depth Formal Security Analysis a
 type: Paper
 note: CSF 2017
 links:
+    - type: download
+      name: paper
+      href: https://sec.uni-stuttgart.de/_media/publications/FettKuestersSchmitz-CSF-2017.pdf
     - type: external-link
       name: technical report on arxiv.org
       href: https://arxiv.org/abs/1704.08539

@@ -4,6 +4,9 @@ title: 'An Expressive Model for the Web Infrastructure: Definition and Applicati
 type: Paper
 note: Security and Privacy 2014
 links:
+    - type: download
+      name: paper
+      href: https://sec.uni-stuttgart.de/_media/publications/FettKuestersSchmitz-SP-2014.pdf
     - type: external-link
       name: technical report on arxiv.org
       href: https://arxiv.org/abs/1403.1866

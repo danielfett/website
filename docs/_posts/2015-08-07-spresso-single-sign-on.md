@@ -4,6 +4,9 @@ title: 'SPRESSO: A Secure, Privacy-Respecting Single Sign-On System for the Web'
 type: Paper
 note: CCS 2015
 links:
+    - type: download
+      name: paper
+      href: https://sec.uni-stuttgart.de/_media/publications/FettKuestersSchmitz-CCS-spresso-2015.pdf
     - type: external-link
       name: technical report on arxiv.org
       href: https://arxiv.org/abs/1508.01719

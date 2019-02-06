@@ -4,6 +4,9 @@ title: Analyzing the BrowserID SSO System with Primary Identity Providers Using 
 type: Paper
 note: ESORICS 2015
 links:
+    - type: download
+      name: paper
+      href: https://sec.uni-stuttgart.de/_media/publications/FettKuestersSchmitz-ESORICS-2015.pdf
     - type: external-link
       name: technical report on arxiv.org
       href: https://arxiv.org/abs/1411.7210

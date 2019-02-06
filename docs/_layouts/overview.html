@@ -17,10 +17,10 @@ class: fullwidth
         <div  class="row">
             <div  class="col-sm-24">
                 <h1>Publications and Articles</h1>
-                <ul>
+                <ul class="more-space-list">
                     {% for link in site.posts %}
                     <li>
-                        <b>{{ link.date|date:"%Y-%m-%d" }}</b> &nbsp; {% if link.type %}{{ link.type }} | {% endif %} <a href="{{ link.url }}">{{ link.title }}</a><br>
+                        <b>{{ link.date|date:"%Y-%m-%d" }}</b> &nbsp; {% if link.type %}{{ link.type }} | {% endif %} <a href="{{ link.url }}">{{ link.title }}</a> {% if link.tag %}<div class="label label-primary">{{ link.tag }}</div>{% endif %}
                         
                         
                     </li>

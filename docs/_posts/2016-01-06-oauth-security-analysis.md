@@ -4,6 +4,9 @@ title: A Comprehensive Formal Security Analysis of OAuth 2.0
 type: Paper
 note: CCS 2016
 links:
+    - type: download
+      name: paper
+      href: https://sec.uni-stuttgart.de/_media/publications/FettKuestersSchmitz-CCS-2016.pdf
     - type: external-link
       name: technical report on arxiv.org
       href: https://arxiv.org/abs/1601.01229
