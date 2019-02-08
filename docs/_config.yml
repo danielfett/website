@@ -1,3 +1,6 @@
 collections:
-  - footer_projects
+  footer_projects:
+  publications:
+    output: true
+  
 permalink: pretty

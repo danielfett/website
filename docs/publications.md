@@ -15,4 +15,5 @@ links:
     width: 12
 ---
 
-
+# Publications and Articles
+Publications and articles that I have authored or co-authored.

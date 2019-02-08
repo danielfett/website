@@ -5,7 +5,7 @@ class: fullwidth
 
 <div class="feature-wrapper js-feature-wrapper">
     <div class="feature-visual">
-        <img src="/img/visuals/feature-gleise.jpg" alt="">
+        <img src="/img/visuals/feature-{{ page.visual }}.jpg" alt="">
     </div>
     <div class="feature-content text-center">
         <div class="spacer spacer-xs">&nbsp;</div>
@@ -29,7 +29,7 @@ class: fullwidth
             </div>
   
             <div class="col-sm-18 col-md-19">
-                <h2><a href="{{ link.href }}">{{ link.title }} {% if link.external %}<i class="fa fa-external-link"></i>{% endif %} </a></h2>
+                <h2><a href="{{ link.href }}">{{ link.title }} {% if link.external %}<small><i class="fa fa-external-link"></i></small>{% endif %} </a></h2>
                 <p>{{ link.teaser }}</p>
     
                 <a href="{{ link.href }}">more &#187;</a>
