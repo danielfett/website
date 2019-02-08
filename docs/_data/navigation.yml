@@ -2,7 +2,13 @@
   link: /
 
 - title: Publications and Articles
-  link: /publications
+  link: /publications/
 
+- title: Hardware and Software
+  link: /hardware-and-software/
+
+- title: Projects
+  link: /projects/
+  
 - title: About me
-  link: /about
+  link: /about/
