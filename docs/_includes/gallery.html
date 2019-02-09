@@ -1,0 +1,13 @@
+<div class="container">
+    <div  class="container">
+        <div  class="row gallery">
+            {% if include.title %}<h2>{{ include.title }}</h2>{% endif %}
+            {% for pic in include.gallery %}
+            <div class="col-sm-4 col-xs-8">
+                <a data-toggle="lightbox" href="{{ pic.full }}" data-title="{{ pic.name }}" data-footer="" data-gallery="gallery-{{ include.id }}"><img src="{{ pic.thumbnail }}" alt=""></a>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+

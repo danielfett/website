@@ -13,6 +13,7 @@ links:
     name: Projects
     description: Software and Hardware Projects
     width: 12
+visual: schild
 ---
 
 # Publications and Articles

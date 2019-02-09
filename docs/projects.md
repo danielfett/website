@@ -1,7 +1,7 @@
 ---
 layout: overview-hwsw
 title: Projects
-visual: schild
+visual: gleise
 projects:
   - title: Pi and More
     external: true

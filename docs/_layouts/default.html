@@ -10,13 +10,9 @@
         <meta name="description" content="Projects, tutorials, and IT security consoluting by Daniel Fett.">
         <link rel="apple-touch-icon" href="/favicon.png">
         <link rel="icon" type="image/png" href="/favicon.png">
-        <!--[if IE]><link rel="shortcut icon" href="/favicon.ico"><![endif]-->
         <link rel="stylesheet" href="/css/base.css">
         <link rel="stylesheet" href="/css/default.css">
-        <!--[if lt IE 9]>
-            <script src="/js/libs/html5shiv.min.js"></script>
-            <script src="/js/libs/respond.min.js"></script>
-        <![endif]-->
+        <link rel="stylesheet" href="/css/djangocms_youtube/djangocms_youtube.css">
     </head>
     <body id="page-top" class="noscript lang-en tpl-{{ layout.class }}">
         <header class="navbar navbar-head js-navbar-head navbar-inverse navbar-fixed-top">
@@ -47,7 +43,7 @@
                         <h2 class="sr-only">Navigation</h2>
                         <ul class="nav navbar-nav">
                             {% for item in site.data.navigation %}
-                            <li class="child {% if item.link == page.url %}active{% endif %} first">
+                            <li class="child {% if item.link == page.url or item.link == page.parent %}active{% endif %} first">
                                 <a href="{{ item.link }}">
                                     <span>
                                         {{ item.title }}
@@ -64,6 +60,25 @@
         </header>
 
         <hr class="sr-only">
+        <div class="feature-wrapper js-feature-wrapper">
+            <div class="feature-visual">
+                <img src="/img/visuals/feature-{{ page.visual|default:"default" }}.jpg" alt="">
+            </div>
+            <div class="feature-content text-center">
+                <div class="spacer spacer-xs">&nbsp;</div>
+            </div>
+        </div>
+        
+        {% for item in site.data.navigation %}
+        {% if item.link == page.parent %}
+        <div class="container">
+            <ol class="breadcrumb">
+                <li class="child"><a href="{{ item.link }}">{{ item.title }}</a></li>
+                <li class="child active">{{ page.title }}</li>
+            </ol>
+        </div>
+        {% endif %}
+        {% endfor %}
         <!-- start: content -->
         {{ content }}
         <!-- end: content -->
@@ -90,6 +105,13 @@
         <script src="/js/base.js"></script>
         <script src="/js/addons/cl.explorer.js"></script>
         <script src="/js/ekko-lightbox.js"></script>
+        <script src="/js/djangocms_youtube/greensock-js/TweenMax.js"></script>
+        <script src="/js/djangocms_youtube/jquery.yt-player.js"></script>
+        <script type="text/javascript">
+            $(function() {
+            $('.js-video-wrapper').youTubePlayer({hl: 'en'});
+            });
+        </script>
         <script>$(document).delegate('*[data-toggle="lightbox"]', 'click', function(event) {
              event.preventDefault();
              $(this).ekkoLightbox({
