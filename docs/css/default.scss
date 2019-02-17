@@ -17,7 +17,7 @@ ul {
     margin-left: 0;
     padding-left: 1.2em;
 }
-ul:not(.nav) li:before {
+.row li:before {
     content: "–";
     position: absolute;
     left: 0;

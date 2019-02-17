@@ -14,6 +14,9 @@ links:
     description: Software and Hardware Projects
     width: 12
 visual: schild
+redirect_from:
+  - /de/tutorials/
+  - /en/tutorials/
 ---
 
 # Publications and Articles

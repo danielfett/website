@@ -2,6 +2,9 @@
 layout: overview-hwsw
 title: Projects
 visual: gleise
+redirect_from:
+  - /en/projects/
+  - /de/projekte/
 projects:
   - title: Pi and More
     external: true

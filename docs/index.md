@@ -1,6 +1,11 @@
 ---
 layout: home
 title: Welcome
+redirect_from:
+  - /de/
+  - /en/
+  - /en/about-me/
+  - /de/ueber-mich/
 ---
 <div class="container">
     <div  class="container">
