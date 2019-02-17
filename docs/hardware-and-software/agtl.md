@@ -2,6 +2,7 @@
 title: Advanced Geocaching Tool for Linux (AGTL)
 parent: /hardware-and-software/
 layout: publication
+visual: default-keinefarbe
 galleries:
   - id: openmoko
     title: AGTL - Openmoko Freerunner

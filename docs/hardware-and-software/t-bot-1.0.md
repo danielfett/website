@@ -1,6 +1,7 @@
 ---
 title: The T-Bot 1.0
 parent: /hardware-and-software/
+visual: default-keinefarbe
 galleries:
   - id: tbot
     contents:

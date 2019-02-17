@@ -2,6 +2,7 @@
 layout: publication
 title: 'pidart: An Electronic Dart Board with Superpowers'
 parent: /hardware-and-software/
+visual: default-keinefarbe
 galleries:
   - id: dartboard
     contents:
