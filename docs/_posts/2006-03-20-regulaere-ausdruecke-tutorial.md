@@ -241,3 +241,5 @@ Kaiserslautern </code> Letzteres ließe sich in regulären Ausdrücken so umsetz
 <p>Und weils so schön war, leg ich noch einen drauf, den "negative lookbehind": <code class="block">.*<span class="new">(?&lt;!</span>Müll<span class="new">)</span>eimer </code> trifft auf alle Eimer, in die kein Müll gehört, meint also: "treffe an dieser Stelle, wenn davor kein "Müll" steht".</p>
 
 <p>Ich hoffe, dieses kleine Tutorial hat dir etwas durch den Zeichendschnungel der Regulären Ausdrücke geholfen. Falls jetzt noch Fragen offen sind, empfehle ich die oben genannten Websites als Nachschlagewerke. Wenn du das Tutorial hilfreich fandest, würde ich mich auch über eine Spende freuen:</p>
+
+<p><a href="https://paypal.me/dfett42" target="_blank"><img src="/img/paypal.png"></a></p>
