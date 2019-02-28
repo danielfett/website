@@ -12,7 +12,7 @@ As far as I can see, there are **no good cross-platform editors for xml2rfc** th
 
 Using mmark is straightforward:
 
- 1. Install mmark from [3].
+ 1. Install mmark from [GitHub][3].
  2. Start writing the RFC in markdown. [Some examples][4] are shipped with mmark.
  3. Compile to XML and then to HTML, for example with ```./mmark -2 main.md > /tmp/xml-2; xml2rfc --html /tmp/xml-2```
 
