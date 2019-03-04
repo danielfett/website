@@ -23,3 +23,4 @@ The new [OAuth Security BCP](https://tools.ietf.org/html/draft-ietf-oauth-securi
 | AS MUST use sender-constrained refresh tokens or refresh token rotation                                  | detect and prevent refresh token replay                                       |
 
 
+This list is based on version -12 of the draft and will be updated in the future.
