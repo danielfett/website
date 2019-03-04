@@ -34,3 +34,22 @@ ul {
     color: #666;
 
 }
+table {
+    border: 1px solid #999;
+    border-radius: 5px;
+}
+th, td {
+    border: 1px solid #999;
+    padding: 4px;
+    vertical-align: top;
+}
+th {
+    background-color: #000;
+    color: #fff;
+}
+
+tr:nth-child(odd) {
+    background-color: #eee;
+}
+
+
