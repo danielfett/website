@@ -13,7 +13,7 @@ The [OAuth Security BCP](https://tools.ietf.org/html/draft-ietf-oauth-security-t
 | Clients MUST use one-time use state nonce bound to user agent                                            | prevent CSRF                                                                  |
 | Clients MUST memorize combination of AS and user agent and ensure subsequent messages match this binding | prevent mix-up attacks                                                        |
 | Auth Code Grant: MUST use PKCE (all kinds of clients)                                                    | detect and prevent auth code replay                                           |
-| Auth Code Grant: Use PKCE or client credentials to authenticate client in token request                  | detect and prevent auth code replay                                           |
+| Auth Code Grant: SHOULD use client authentication if possible                  | detect and prevent auth code replay                                           |
 | Prevent leakage of code through referrer headers, request logs, and browser history                      | prevent auth code replay                                                      |
 | Implicit Grant: SHOULD NOT be used unless tokens can be sender-constrained                               | prevent leakage and replay of access tokens                                   |
 | AS SHOULD use TLS-based methods for sender-constraining access tokens                                    | prevent token replay                                                          |
