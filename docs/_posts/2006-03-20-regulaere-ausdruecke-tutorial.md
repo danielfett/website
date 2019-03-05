@@ -37,7 +37,7 @@ redirect_from:
 
 <p>Im Folgenden wird davon ausgegangen, dass du eine entsprechende Stelle vorliegen hast und dich bereits informiert hast, wie reguläre Ausdrücke in der Umgebung deiner Wahl verwendet werden. In PHP geschieht dies z.B. mit den Funktionen <a href="http://www.php.net/preg_match" target="_blank"> preg_match</a> (Prüfen von Strings, finden von Zeichenketten) und <a href="http://www.php.net/preg_replace" target="_blank"> preg_replace</a> (Ersetzen von Zeichenketten).</p>
 
-<p>Am Besten testest du deinen Ausdruck zuerst "auf dem Trockenen". Dazu kannst du ein Onlinetool wie <a href="https://regex101.com/" class=" ">regex 101</a> oder den <a href="http://www.weitz.de/regex-coach/" target="_blank"> Regex-Coach</a> benutzen.</p>
+<p>Am besten testest du deinen Ausdruck zuerst "auf dem Trockenen". Dazu kannst du ein Onlinetool wie <a href="https://regex101.com/" class=" ">regex 101</a> oder den <a href="http://www.weitz.de/regex-coach/" target="_blank"> Regex-Coach</a> benutzen.</p>
 
 <h3 id="GuterStil">Guter Stil</h3>
 
