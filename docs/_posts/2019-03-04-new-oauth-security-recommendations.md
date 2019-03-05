@@ -1,6 +1,6 @@
 ---
 title: New OAuth Security Recommendations
-type: Overview
+type: Cheat Sheet
 layout: publication
 ---
 
