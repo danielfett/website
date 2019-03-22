@@ -3,7 +3,7 @@ layout: publication
 title: OAuth Security Reinforced
 type: Talk
 links:
-    - type: external-link
+    - type: download
       name: download
       href: /download/oauth-2.0-security-reinforced.pdf
 ---

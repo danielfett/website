@@ -5,7 +5,11 @@ type: PhD Thesis
 links: 
     - type: download
       href: https://elib.uni-stuttgart.de/bitstream/11682/10214/1/%27An%20Expressive%20Formal%20Model%20of%20the%20Web%20Infrastructure.pdf
-      name: download
+      name: thesis
+    - type: download
+      name: slides
+      href: /download/thesis-defense.pdf
+
 ---
 
 **Abstract:** The World Wide Web is arguably the most important medium of our time. Billions of users
