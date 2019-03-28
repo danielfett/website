@@ -26,9 +26,16 @@ This way, the metadata and the XML for the references, both of which can confuse
 
 I recommend reading the [mmark syntax manual][6] to learn about the features supported by mmark.
 
+If you are interested in starting a new draft using markdown, I
+recommend taking a look at the [draft-dpop][7] repository and using
+that as the starting point.
+
+**Update 2019-03-28:** Added link to dpop draft repository.
+
 [1]: https://xml2rfc.tools.ietf.org/rfc7749.html
 [2]: https://xml2rfc.tools.ietf.org/rfc7991.html
 [3]: https://github.com/mmarkdown/mmark
 [4]: https://github.com/mmarkdown/mmark/tree/master/rfc
 [5]: https://github.com/tlodderstedt/oauth2/tree/master/draft-ietf-oauth-security-topics
 [6]: https://mmark.nl/post/syntax/
+[7]: https://github.com/webhamster/draft-dpop
