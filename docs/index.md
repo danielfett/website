@@ -23,7 +23,7 @@ redirect_from:
                 <p><i class="fa fa-twitter-square">​ </i> <a href="https://twitter.com/dfett42" class=" ">@dfett42</a></p>
                 <p><i class="fa fa-linkedin-square">​ </i> <a href="https://www.linkedin.com/in/daniel-fett-737817110" class=" ">Daniel Fett</a></p>
                 <p><i class="fa fa-xing-square">​ </i> <a href="https://www.xing.com/profile/Daniel_Fett2/cv" class=" ">Daniel Fett</a></p>
-                <p><i class="fa fa-github-square">​ </i> <a href="https://github.com/webhamster/" class=" ">webhamster</a></p>
+                <p><i class="fa fa-github-square">​ </i> <a href="https://github.com/danielfett/" class=" ">danielfett</a></p>
                 <p><i class="fa fa-bitbucket-square">​ </i> <a href="https://bitbucket.org/webhamster/" class=" ">webhamster</a></p>
                 <p><i class="fa fa-envelope">​ </i> <a href="mailto:kontakt@danielfett.de" class=" ">kontakt@danielfett.de</a></p>
             </div>
