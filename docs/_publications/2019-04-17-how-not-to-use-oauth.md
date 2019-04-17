@@ -21,9 +21,9 @@ proving.
 To address these challenges, the IETF OAuth working group is working
 towards a
 new
-[/publications/2018-12-28-oauth-bcp/](Security Best Current Practice (BCP))
+[Security Best Current Practice (BCP)](/publications/2018-12-28-oauth-bcp/)
 RFC that aims to weed out insecure implementation patterns based on
-lessons learned in practice and from [/publications/2018-10-19-an-expressive-formal-web-model](formal security analyses) of OAuth
+lessons learned in practice and from [formal security analyses](/publications/2018-10-19-an-expressive-formal-web-model) of OAuth
 and OpenID Connect. The BCP gives concrete advice to defend against
 attacks discovered recently (like the AS mix-up attack) and deprecates
 less-secure grant types such as the Implicit Grant.
