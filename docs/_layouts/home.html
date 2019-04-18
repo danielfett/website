@@ -13,7 +13,7 @@ class: home
                 
 		<h3>Latest Articles/Talks/Publications</h3>
 		<ul class="more-space-list">
-		{% assign items = site.posts | concat: site.publications | sort: 'date' %}
+		{% assign items = site.posts | concat: site.publications | sort: 'date' | reverse %}
 		{% for link in items limit: 5 %}
 		<li>
 		  <b>{{ link.date|date:"%Y-%m-%d" }}</b> &nbsp; {% if link.type %}{{ link.type }} | {% endif %} <a href="{{ link.url }}">{{ link.title }}</a> {% if link.tag %}<div class="label label-primary">{{ link.tag }}</div>{% endif %}
