@@ -11,12 +11,14 @@ class: home
 
 		{{ content }}
                 
-		<h2>Latest Articles/Talks/Publications (<a href="/publications">see all</a>)</h2>
+		<h3>Latest Articles/Talks/Publications</h3>
+		<ul class="more-space-list">
 		{% assign items = site.posts | concat: site.publications | sort: 'date' %}
 		{% for link in items limit: 5 %}
 		<b>{{ link.date|date:"%Y-%m-%d" }}</b> &nbsp; {% if link.type %}{{ link.type }} | {% endif %} <a href="{{ link.url }}">{{ link.title }}</a> {% if link.tag %}<div class="label label-primary">{{ link.tag }}</div>{% endif %}
 		{% endfor %}
-				
+		</ul>
+		<p>(<a href="/publications">see all</a>)</p>
             </div>
             <div  class="col-sm-6">
                 <p style="text-align: center;"><img class="filer_image " alt="me.png" src="/img/danielfett.png" width="150" height="150" />
