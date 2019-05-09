@@ -9,7 +9,7 @@ visual: schild
         <div  class="row">
             <div  class="col-sm-24">
                 {{ page.date|date:"%Y-%m-%d" }}
-                <h1>{% if page.type %}<div class="pretitle">{{ page.type }}</div>{% endif %}{{ page.title }}</h1>
+                <h1>{% if page.type %}<div class="pretitle">{{ page.type }}{% if page.venue %}@ {{ page.venue }}{% endif %}</div>{% endif %}{{ page.title }}</h1>
                 {{ page.note }}
                 {% for link in page.links %}
                 <div class="publication-link"><a href="{{ link.href }}"><i class="fa fa-{{ link.type }}"></i></a> <a href="{{ link.href }}">{{ link.name }}</a></div>
