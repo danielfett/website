@@ -2,7 +2,7 @@
 layout: publication
 title: 'The Web SSO Standard OpenID Connect: In-Depth Formal Security Analysis and Security Guidelines'
 type: Paper
-note: CSF 2017
+venue: CSF 2017
 links:
     - type: download
       name: paper

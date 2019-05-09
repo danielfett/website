@@ -2,6 +2,7 @@
 layout: publication
 title: OAuth Security Reinforced
 type: Talk
+venue: OAuth Security Workshop 2019
 links:
     - type: download
       name: download

@@ -2,7 +2,7 @@
 layout: publication
 title: 'An Expressive Model for the Web Infrastructure: Definition and Application to the BrowserID SSO System'
 type: Paper
-note: Security and Privacy 2014
+venue: Security and Privacy 2014
 links:
     - type: download
       name: paper

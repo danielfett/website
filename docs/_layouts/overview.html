@@ -32,7 +32,7 @@ class: fullwidth
                 <ul class="more-space-list">
                     {% for link in publications %}
                     <li>
-                        <b>{{ link.date|date:"%Y-%m-%d" }}</b> &nbsp; {% if link.type %}{{ link.type }} | {% endif %} <a href="{{ link.url }}">{{ link.title }}</a> {% if link.tag %}<div class="label label-primary">{{ link.tag }}</div>{% endif %}
+                        <b>{{ link.date|date:"%Y-%m-%d" }}</b> &nbsp; {% if link.type %}{{ link.type }} | {% endif %} {% if link.venue %}{{ link.venue }} | {% endif %}<a href="{{ link.url }}">{{ link.title }}</a> {% if link.tag %}<div class="label label-primary">{{ link.tag }}</div>{% endif %}
                         
                         
                     </li>

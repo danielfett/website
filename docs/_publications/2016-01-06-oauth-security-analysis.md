@@ -2,7 +2,7 @@
 layout: publication
 title: A Comprehensive Formal Security Analysis of OAuth 2.0
 type: Paper
-note: CCS 2016
+venue: CCS 2016
 links:
     - type: download
       name: paper

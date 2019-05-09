@@ -2,7 +2,7 @@
 layout: publication
 title: Pi and More - eine Veranstaltungsreihe rund um "kleine Computer"
 type: Paper
-note: GI Jahrestagung INFORMATIK 2016
+venue: INFORMATIK 2016
 links:
     - type: download
       name: paper

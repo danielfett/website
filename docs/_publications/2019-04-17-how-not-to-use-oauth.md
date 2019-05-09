@@ -2,6 +2,7 @@
 layout: publication
 title: How (Not) to Use OAuth
 type: Talk
+venue: LocoMocoSec 2019
 links:
     - type: download
       name: download

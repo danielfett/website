@@ -2,6 +2,7 @@
 layout: publication
 title: On the Security and Privacy of Modern Single Sign-On in the Web
 type: Talk
+venue: 33C3
 links:
     - type: play
       name: watch

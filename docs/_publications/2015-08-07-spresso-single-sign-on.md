@@ -2,7 +2,7 @@
 layout: publication
 title: 'SPRESSO: A Secure, Privacy-Respecting Single Sign-On System for the Web'
 type: Paper
-note: CCS 2015
+venue: CCS 2015
 links:
     - type: download
       name: paper

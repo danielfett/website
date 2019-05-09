@@ -2,7 +2,7 @@
 layout: publication
 title: Analyzing the BrowserID SSO System with Primary Identity Providers Using an Expressive Model of the Web
 type: Paper
-note: ESORICS 2015
+venue: ESORICS 2015
 links:
     - type: download
       name: paper

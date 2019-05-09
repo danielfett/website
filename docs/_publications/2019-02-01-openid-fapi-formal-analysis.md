@@ -2,7 +2,7 @@
 layout: publication
 title: An Extensive Formal Security Analysis of the OpenID Financial-grade API
 type: Paper
-note: To appear in Security & Privacy 2019
+venue: Security & Privacy 2019
 links:
     - type: external-link
       name: technical report on arxiv.org
