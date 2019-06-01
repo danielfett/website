@@ -7,6 +7,9 @@ links:
     - type: download
       name: download
       href: /download/locomocosec-2019-how-not-to-use-oauth.pdf
+    - type: play
+      name: watch
+      href: https://www.youtube.com/watch?v=mGSp-vsewxI
 ---
 
 OAuth is the most important framework for federated authorization on
@@ -26,7 +29,7 @@ new
 RFC that aims to weed out insecure implementation patterns based on
 lessons learned in practice and from [formal security analyses](/publications/2018-10-19-an-expressive-formal-web-model) of OAuth
 and OpenID Connect. The BCP gives concrete advice to defend against
-attacks discovered recently (like the AS mix-up attack) and deprecates
+attacks discovered recently (like the AS mix-up attack) and discourages the use of
 less-secure grant types such as the Implicit Grant.
 
 This talk will outline the challenges faced by OAuth in dynamic and
