@@ -7,9 +7,12 @@ links:
     - type: download
       name: download
       href: /download/froscon-2019-how-not-to-use-oauth.pdf
-#    - type: play
-#      name: watch
-#      href: https://www.youtube.com/watch?v=mGSp-vsewxI
+    - type: play
+      name: watch (media.ccc.de)
+      href: https://media.ccc.de/v/froscon2019-2334-how_not_to_use_oauth
+    - type: play
+      name: watch (youtube)
+      href: https://www.youtube.com/watch?v=sdpWVizuS70
 ---
 
 <i>I am coauthoring the new security recommendations RFC for OAuth 2.0
