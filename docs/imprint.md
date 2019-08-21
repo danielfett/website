@@ -4,7 +4,7 @@ title: Imprint and Privacy Stuff
 ---
 <h2>Imprint</h2>
 
-<p>Daniel Fett<br>
+<p>Dr. Daniel Fett<br>
 Gartenstraße 54<br>
 53859 Niederkassel</p>
 
@@ -13,8 +13,7 @@ Gartenstraße 54<br>
 <p>Telephone: +49<font id="E672-font">1774045518</font><br>
 E-mail: kontakt@danielfett.de</p>
 
-<p>GPG key fingerprint: AB45 9646 E795 F0CF 71D1 F856 580F 590E 959D AAA9<br>
-Old key: E3F3 EE97 D6AE C97D 40E2 EDC9 4B86 7EB7 EE24 8275</p>
+<p>GPG key fingerprint: AB45 9646 E795 F0CF 71D1 F856 580F 590E 959D AAA9</p>
 <h2>Privacy Policy</h2>
 
 <p>The use of the Internet pages of Daniel Fett is possible without
