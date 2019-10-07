@@ -12,8 +12,7 @@ links:
 flows utilizing a browser-based redirect flow to authenticate the user
 and gather her consent to initiate the payment. It is based on a
 security threat analysis of several PSD2 API standards conducted by
-OpenID Foundation's Financial-grade API (FAPI) Working Group
-(https://openid.net/wg/fapi/).
+OpenID Foundation's [Financial-grade API (FAPI) Working Group](https://openid.net/wg/fapi/).
 
 In the cross-browser payment initiation attack, Bob wants to make
 Alice pay for the goods he ordered at the web site of some merchant.
