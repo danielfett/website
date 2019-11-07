@@ -4,6 +4,9 @@ title: An Extensive Formal Security Analysis of the OpenID Financial-grade API
 type: Paper
 venue: Security & Privacy 2019
 links:
+    - type: download
+      name: paper
+      href: https://sec.uni-stuttgart.de/_media/publications/FettHosseyniKuesters-FAPI-SP-2019.pdf
     - type: external-link
       name: technical report on arxiv.org
       href: https://arxiv.org/abs/1901.11520
