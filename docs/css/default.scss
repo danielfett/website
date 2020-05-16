@@ -17,7 +17,7 @@ ul {
     margin-left: 0;
     padding-left: 1.2em;
 }
-.row li:before {
+.row ul li:before {
     content: "–";
     position: absolute;
     left: 0;
@@ -34,20 +34,36 @@ ul {
     color: #666;
 
 }
+table, svg {
+
+    margin-top: 1ex;
+    margin-bottom: 2ex;
+}
 table {
-    border: 1px solid #999;
-    border-radius: 5px;
+    border: none;
 }
 th, td {
-    border: 1px solid #999;
+    border: none;
     padding: 4px;
     vertical-align: top;
 }
 th {
-    background-color: #000;
-    color: #fff;
+    color: #375a7f;
+    border-bottom: 2px solid #000;
 }
 
-tr:nth-child(odd) {
-    background-color: #eee;
+tr {
+    border-bottom: 1px solid #000;
+}
+th, td {
+    padding-right: 15px;
+}
+
+code {
+    color: #375a7f;
+    background-color: #f0f0f0;
+}
+
+blockquote {
+    font-size: inherit;
 }

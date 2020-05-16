@@ -1,0 +1,27 @@
+hide stereotype
+skinparam shadowing false
+skinparam sequence {
+ArrowColor #375a7f
+LifeLineBorderColor #ccc
+
+ParticipantBorderColor #375a7f
+ParticipantBackgroundColor #375a7f
+ParticipantFontColor #fff
+ParticipantFontName Roboto
+ParticipantFontSize 14
+
+ParticipantBorderColor<<Attacker>> #C3744B
+ParticipantBackgroundColor<<Attacker>> #C3744B
+}
+
+skinparam note {
+BackgroundColor #CEE1F5
+BorderColor #CEE1F5
+FontColor #000
+
+BackgroundColor<<warning>> #FFCEB5
+BorderColor<<warning>> #FFCEB5
+
+BackgroundColor<<ok>> #C6EAA6
+BorderColor<<ok>> #C6EAA6
+}
