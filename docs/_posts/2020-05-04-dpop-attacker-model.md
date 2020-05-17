@@ -9,6 +9,11 @@ This document outlines attacker models considered for [DPoP](https://tools.ietf.
 
 > **Note:** DPoP is still an IETF working group draft. This is not a normative document and the final attacker model for DPoP might look different to the one presented here!
 
+
+<div class="alert alert-info" role="alert">
+  <b>Disclaimer:</b> This document discusses theoretical or practical attacks on OAuth or OpenID Connect. Nonetheless, both standards can be used securely as shown by, among others, formal analyses. With the appropriate security mechanisms, both are even suitable for high-risk environments. As with any security protocol, a careful evaluation of potential threats and the required security mechanisms is indispensable when designing a solution based on OAuth/OpenID Connect.
+</div>
+
 ## Misconfigured Resource Endpoint
 
 A resource endpoint is misconfigured. For example, if OAuth Metadata is used, the following configuration can lead to the userinfo endpoint being under the control of the attacker:

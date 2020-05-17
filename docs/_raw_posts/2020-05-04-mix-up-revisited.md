@@ -9,6 +9,11 @@ A Mix-Up Attack on OAuth is an attack wherein the attacker manages to convince t
 
 In this analysis, I revisit simple mix-up attacks and mix-up attacks with OAuth Metadata and try to find out what happens if we put Pushed Authorization Requests (PAR) into the mix.
 
+
+<div class="alert alert-info" role="alert">
+  <b>Disclaimer:</b> This document discusses theoretical or practical attacks on OAuth or OpenID Connect. Nonetheless, both standards can be used securely as shown by, among others, formal analyses. With the appropriate security mechanisms, both are even suitable for high-risk environments. As with any security protocol, a careful evaluation of potential threats and the required security mechanisms is indispensable when designing a solution based on OAuth/OpenID Connect.
+</div>
+
 # Basic Mix-Up Example
 Assume that a user wants to start an OAuth flow using the malicious OAuth provider (OP) `attacker.com`. That OP might hide its true identity or, in a large ecosystem, may be an OP that has been compromised. 
 
