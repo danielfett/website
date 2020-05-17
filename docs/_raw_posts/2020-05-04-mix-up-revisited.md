@@ -288,7 +288,7 @@ PAR with client authentication promises integrity for the authorization request 
  1. If the PAR endpoint points to the attacker, the attacker has the option of taking the parameters from the PAR request, changing them into URL parameters (and maybe manipulating them), and creating an authorization request URL from them. If the authorization endpoint also points to an endpoint of the attacker, the attacker can just forward the user to the newly created authorization request URL at the honest server. If the authorization endpoint is not under the control of the attacker, the attacker can try to use HTTP request parameter pollution to influence the authorization request the client sends to the authorization server.
 
 
-> Recommendation: PAR-enabled authorization servers can **protect the integrity better** and **protect against Mix-Up Attacks better** if they ONLY accept PAR requests.
+> **Recommendation:** PAR-enabled authorization servers can **protect the integrity better** and **protect against Mix-Up Attacks better** if they ONLY accept PAR requests.
 
 # Mitigations
 
@@ -296,11 +296,11 @@ PAR with client authentication promises integrity for the authorization request 
  * The `iss` parameter in the authorization response (and a check performed by the client) solves all mix-up variants listed above.
  * A per-issuer-redirect uri can be confused with a per-AS-redirect URI, the latter would not solve mix-up.
 
-> Recommendation: Emphasize importance of `iss` parameter (or `issuer`) in authorization response. Maybe introduce this parameter in the security BCP or another document?
+> **Recommendation:** Emphasize importance of `iss` parameter (or `issuer`) in authorization response. Maybe introduce this parameter in the security BCP or another document?
 
  * As described above, there is probably no value in adding JARM to protect the issuer parameter in the authorization response. 
  * Attacks where the token endpoint is at the honest AS and the userinfo endpoint or another resource is at the attacker can be mitigated by using sender-constrained access tokens. An attacker would not be able to replay the token at another endpoint.
 
-> Sender-constrained access tokens rock.
+> **Note:** Sender-constrained access tokens rock.
 
-> Sender-constraining the authorization code (PAR + PAR-DPoP?) might be worth looking into.
+> **Recommendation:** Sender-constraining the authorization code (PAR + PAR-DPoP?) might be worth looking into.
