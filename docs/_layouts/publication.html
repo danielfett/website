@@ -4,21 +4,46 @@ class: fullwidth
 visual: schild
 ---
 
+
 <div class="container">
-    <div  class="container">
-        <div  class="row">
-            <div  class="col-sm-24">
-                {{ page.date|date:"%Y-%m-%d" }}
-                <h1>{% if page.type %}<div class="pretitle">{{ page.type }}{% if page.venue %} @ {{ page.venue }}{% endif %}</div>{% endif %}{{ page.title }}</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-24">
+                <a href="/publications">&laquo; {% if page.lang == 'de' %}Alle Beiträge{% else %}All
+                    Articles{% endif %}</a>
+                <div class="row pretitlebar">
+                    <div class="col-xs-12 pretitle">
+                        {% if page.type %}{{ page.type }}{% if page.venue %} @ {{ page.venue }}{% endif %}{% endif %}
+                    </div>
+                    <div class="col-xs-12 date">
+                        {% if page.date %}{{ page.date|date:"%Y-%m-%d" }}{% endif %}
+                    </div>
+                </div>
+                <h1>{{ page.title }}</h1>
                 {{ page.note }}
                 {% for link in page.links %}
-                <div class="publication-link"><a href="{{ link.href }}"><i class="fa fa-{{ link.type }}"></i></a> <a href="{{ link.href }}">{{ link.name }}</a></div>
+                <div class="publication-link"><a href="{{ link.href }}"><i class="fa fa-{{ link.type }}"></i></a> <a
+                        href="{{ link.href }}">{{ link.name }}</a></div>
                 {% endfor %}
+                {% unless page.toc %}
+                {{ page.content }}
+                {% endunless %}
+            </div>
+        </div>
+        {% if page.toc %}
+        <div class="row">
+            <div class="col-md-7 col-md-push-17 toc">
+                <h2>{% if page.lang == 'de' %}Inhalt{% else %}Contents{% endif %}</h2>
+                {% include toc.html html=page.content %}
+            </div>
+            <div class="col-md-17 col-md-pull-7">
                 {{ page.content }}
             </div>
         </div>
+        {% endif %}
     </div>
-</div> 
+</div>
+
 
 {% for gallery in page.galleries %}
 {% include gallery.html id=gallery.id gallery=gallery.contents title=gallery.title %}

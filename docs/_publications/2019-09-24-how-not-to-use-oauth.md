@@ -2,7 +2,7 @@
 layout: publication
 title: How (Not) to Use OAuth
 type: Talk
-venue: Secure Cologne Talks, Sept. 24 2019
+venue: Secure Cologne Talks
 links:
     - type: download
       name: download

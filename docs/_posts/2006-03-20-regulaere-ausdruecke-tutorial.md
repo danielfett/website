@@ -1,10 +1,12 @@
 ---
 title: Reguläre Ausdrücke
 type: Tutorial
-layout: publication_toc
+layout: publication
+toc: yes
 redirect_from: 
   - /de/tutorials/tutorial-regulare-ausdrucke/
   - /en/tutorials/tutorial-regulare-ausdrucke/
+lang: de
 ---
 
 <p class="intro">"Reguläre Ausdrücke" sind eine Art Sprache, die beim Programmieren für diverse Problemlösungen verwendet werden kann, insbesondere dann, wenn es darum geht, Zeichenketten (Strings) zu bearbeiten, zu prüfen oder in ihnen etwas zu suchen.</p>

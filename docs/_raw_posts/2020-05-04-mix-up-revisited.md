@@ -1,31 +1,18 @@
 ---
 title: Mix-Up, Revisited
-tags:
-  - draft
 layout: publication
 type: Analysis
+toc: yes
 ---
-
-
-- [Mix-Up, Revisited](#mix-up-revisited)
-  - [Basic Mix-Up Example](#basic-mix-up-example)
-    - [How to Defend Against Mix-Up?](#how-to-defend-against-mix-up)
-  - [With OAuth Metadata](#with-oauth-metadata)
-    - [Simple Mix-Up](#simple-mix-up)
-    - [Mix-Up with Confidential Clients and PKCE](#mix-up-with-confidential-clients-and-pkce)
-    - [Stealing Access Tokens](#stealing-access-tokens)
-    - [Defending Against Mix-Up with Metadata](#defending-against-mix-up-with-metadata)
-- [Mixup With PAR](#mixup-with-par)
-- [Integrity of the Authorization Request with PAR](#integrity-of-the-authorization-request-with-par)
-- [Mitigations](#mitigations)
 
 A Mix-Up Attack on OAuth is an attack wherein the attacker manages to convince the client to send credentials (authorization code or access token) obtained from an "honest" authorization server to a server under the attacker's control.
 
-## Basic Mix-Up Example
+In this analysis, I revisit simple mix-up attacks and mix-up attacks with OAuth Metadata and try to find out what happens if we put Pushed Authorization Requests (PAR) into the mix.
+
+# Basic Mix-Up Example
 Assume that a user wants to start an OAuth flow using the malicious OAuth provider (OP) `attacker.com`. That OP might hide its true identity or, in a large ecosystem, may be an OP that has been compromised. 
 
 Even if all connections are properly secured via TLS, the following attack can be mounted by `attacker.com`:
-
 
 
 ```plantumlcode
@@ -72,7 +59,7 @@ The code is bound to the PKCE challenge known to the attacker. If the attacker h
 (This shows the authorization code grant, but the attack is applicable as well to the Implicit Grant.)
 
 
-### How to Defend Against Mix-Up?
+## How to Defend Against Mix-Up?
 
 The guiding principle in defending against Mix-Up Attacks is that the authorization server must make its identity clear to the relying party. Since a successful Mix-Up Attack necessarily involves an honest authorization server, this defence does not rely on the honesty of the attacker.
 
@@ -179,9 +166,9 @@ However, if the attacker can modify the response, he can also read the authoriza
 
 
 
-## With OAuth Metadata
+# With OAuth Metadata
 
-### Simple Mix-Up
+## Simple Mix-Up
 
 Assume that an attacker sets up the following OAuth Metadata:
 
@@ -197,7 +184,7 @@ Assume that an attacker sets up the following OAuth Metadata:
 
 In this case, the attack as above works as well. The client will send the user to the honest authorization endpoint, but then send the code to the manipulated token endpoint. The attacker can redeem the code for an access token at the token endpoint if the client is a public client.
 
-### Mix-Up with Confidential Clients and PKCE
+## Mix-Up with Confidential Clients and PKCE
 
 That is nice, but if the client is a confidential client, the attacker cannot redeem the code for an authorization token. One way around this limitation is a [Code Injection Attack](https://tools.ietf.org/id/draft-ietf-oauth-security-topics-14.html#rfc.section.4.5). This attack is normally [protected against with PKCE](https://tools.ietf.org/id/draft-ietf-oauth-security-topics-14.html#rfc.section.4.5.3). 
 
@@ -214,20 +201,21 @@ When a user arrives at that endpoint, attacker starts an OAuth session with the 
 
 The attacker can then inject the code acquired from the user's session into his own session with the client. This attack is called a [PKCE Chosen Challenge Attack](https://datatracker.ietf.org/meeting/105/materials/slides-105-oauth-sessa-oauth-security-topics-00)).
 
-### Stealing Access Tokens
+## Stealing Access Tokens
 
 It is possible to steal the access token as well using the following configuration:
 
 ```json
 {
     "issuer": "https://attacker.com",
-    "authorization_endpoint": "https://honest.com/authorize",  # or attacker.com and then redirect
+    "authorization_endpoint": "https://honest.com/authorize",  
     "token_endpoint": "https://honest.com/token",
     "userinfo_endpoint": "https://attacker.com/userinfo"
 }
 ```
+(or use attacker.com for the authorization endpoint and then redirect)
 
-### Defending Against Mix-Up with Metadata
+## Defending Against Mix-Up with Metadata
 
 The difference to the scenario without metadata is that the client now has an issuer URI and resolves the authorization server using the issuer URI. An attacker can, as shown, assign the honest authorization server to his own issuer. It is therefore necessary that the authorization server signals for which issuers it may be used, as that implies the issuer configurations and thereby the token and userinfo endpoints that are being used.
 
@@ -235,7 +223,7 @@ Importantly, it is not enough that the autorization server identifies *itself* (
 
 > **Recommendation:** The security BCP needs to make clear that *per-AS* redirect URIs are only sufficient if OAuth Metadata is not used to resolve multiple issuers. Otherwise, *per-Issuer* redirect URIs or the `iss` parameter MUST be used.
 
-# Mixup With PAR
+## Mixup With Pushed Authorization Requests
 
 What if put PAR into the mix? It complicates things.
 
@@ -256,34 +244,34 @@ The following table lists the 16 possible combinations (`H`=honest server's endp
 | PAR   | Authz | Tok   | UInfo | Attacks for public clients         | for confidential clients              |
 | ----- | ----- | ----- | ----- | ---------------------------------- | ------------------------------------- |
 | `H`   | `H`   | `H`   | `H`   | no mix-up attack                   | *                                     |
-| `H`   | `H`   | `H`   | `Att` | [token to UInfo]                   | *                                     |
-| `H`   | `H`   | `Att` | `H`   | [code to Tok-PC] [token injection] | * [code to Tok-NCI] [token injection] |
-| `H`   | `H`   | `Att` | `Att` | [code to Tok-PC]                   | * [code to Tok-NCI]                   |
+| `H`   | `H`   | `H`   | `Att` | _token to UInfo_                   | *                                     |
+| `H`   | `H`   | `Att` | `H`   | _code to Tok-PC_ _token injection_ | * _code to Tok-NCI_ _token injection_ |
+| `H`   | `H`   | `Att` | `Att` | _code to Tok-PC_                   | * _code to Tok-NCI_                   |
 | `H`   | `Att` | `H`   | `H`   | no mix-up attack                   | * same                                |
-| `H`   | `Att` | `H`   | `Att` | [token to UInfo]                   | * same                                |
-| `H`   | `Att` | `Att` | `H`   | [code to Tok-PC] [token injection] | * [code to Tok*] [token injection]    |
-| `H`   | `Att` | `Att` | `Att` | [code to Tok-PC]                   | * [code to Tok*]                      |
-| `Att` | `H`   | `H`   | `H`   | no mix-up attack                   | -                                     |
-| `Att` | `H`   | `H`   | `Att` | [token to UInfo]                   | same                                  |
-| `Att` | `H`   | `Att` | `H`   | [code to Tok-PC] [token injection] | [code to Tok] [token injection]       |
-| `Att` | `H`   | `Att` | `Att` | [code to Tok-PC]                   | [code to Tok]                         |
+| `H`   | `Att` | `H`   | `Att` | _token to UInfo_                   | * same                                |
+| `H`   | `Att` | `Att` | `H`   | _code to Tok-PC_ _token injection_ | * _code to Tok2_ _token injection_    |
+| `H`   | `Att` | `Att` | `Att` | _code to Tok-PC_                   | * _code to Tok2_                      |
+| `Att` | `H`   | `H`   | `H`   | no mix-up attack                   | no mix-up attack                      |
+| `Att` | `H`   | `H`   | `Att` | _token to UInfo_                   | same                                  |
+| `Att` | `H`   | `Att` | `H`   | _code to Tok-PC_ _token injection_ | _code to Tok_ _token injection_       |
+| `Att` | `H`   | `Att` | `Att` | _code to Tok-PC_                   | _code to Tok_                         |
 | `Att` | `Att` | `H`   | `H`   | no mix-up attack                   | same                                  |
-| `Att` | `Att` | `H`   | `Att` | [token to UInfo]                   | same                                  |
-| `Att` | `Att` | `Att` | `H`   | [code to Tok-PC]                   | [code to Tok]                         |
-| `Att` | `Att` | `Att` | `Att` | [code to Tok-PC]                   | [code to Tok]                         |
+| `Att` | `Att` | `H`   | `Att` | _token to UInfo_                   | same                                  |
+| `Att` | `Att` | `Att` | `H`   | _code to Tok-PC_                   | _code to Tok_                         |
+| `Att` | `Att` | `Att` | `Att` | _code to Tok-PC_                   | _code to Tok_                         |
 
 
-[*] or no mix-up depending on deployment - client credentials might not match the ones that need to be presented
+_*_ no mix-up depending on deployment - client credentials might not match the ones that need to be presented
 
-Mix-Up Attacks:
+Legend:
 
- * [token to UInfo]: Token is sent to attacker's endpoint as shown above.
- * [code to Tok-PC]: Code is sent to attacker's endpoint as shown above. Code is readily usable by the attacker as it is not issued for a confidential client.
- * [code to Tok-NCI]: Code is sent to attacker's endpoint as shown above. Code injection is prevented as the    attacker cannot exchange the PKCE Challenge.
- * [code to Tok]: Code is sent to attacker's endpoint as shown above. Attacker can inject the stolen code using code injection with PKCE Chosen Challenge as shown above.
- * [code to Tok*]: Code is sent to attacker's endpoint as shown above. If the authorization server accepts non-PAR requests, the attacker can inject the stolen code using code injection with PKCE Chosen Challenge as shown above.
- * [token injection]: The attacker can send an access token to the client that is then used by the client for the resource server. This can defeat sender-constrained tokens, [as described in this paper](https://arxiv.org/abs/1901.11520).
- * [authz-mitm]: The attacker can change all contents of the authorization request.
+ * _token to UInfo_: Token is sent to attacker's endpoint as shown above.
+ * _code to Tok-PC_: Code is sent to attacker's endpoint as shown above. Code is readily usable by the attacker as it is not issued for a confidential client.
+ * _code to Tok-NCI_: Code is sent to attacker's endpoint as shown above. Code injection is prevented as the    attacker cannot exchange the PKCE Challenge.
+ * _code to Tok_: Code is sent to attacker's endpoint as shown above. Attacker can inject the stolen code using code injection with PKCE Chosen Challenge as shown above.
+ * _code to Tok2_: Code is sent to attacker's endpoint as shown above. If the authorization server accepts non-PAR requests, the attacker can inject the stolen code using code injection with PKCE Chosen Challenge as shown above.
+ * _token injection_: The attacker can send an access token to the client that is then used by the client for the resource server. This can defeat sender-constrained tokens, [as described in this paper](https://arxiv.org/abs/1901.11520).
+ * _authz-mitm_: The attacker can change all contents of the authorization request.
  
 Other attacks:
 
@@ -292,7 +280,7 @@ Other attacks:
  * PAR promises integrity for the authorization request. This can be undermined in certain conditions, see below.
 
 
-# Integrity of the Authorization Request with PAR
+## Integrity of the Authorization Request with PAR
 
 PAR with client authentication promises integrity for the authorization request by sending all the data of the authorization request via the backend.
 

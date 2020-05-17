@@ -1,135 +1,153 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>
-            {{ page.title }} - danielfett.de
-        </title>
-        <meta name="viewport" content="width=device-width,initial-scale=1">
-        <link rel="apple-touch-icon" href="/favicon.png">
-        <link rel="icon" type="image/png" href="/favicon.png">
-        <link rel="stylesheet" href="/css/base.css">
-        <link rel="stylesheet" href="/css/default.css">
-        <link rel="stylesheet" href="/css/djangocms_youtube/djangocms_youtube.css">
-    </head>
-    <body id="page-top" class="noscript lang-en tpl-{{ layout.class }}">
-        <header class="navbar navbar-head js-navbar-head navbar-inverse navbar-fixed-top">
-            <div class="container">
-                <div class="navbar-header">
-                    <h1 class="navbar-brand">
-                        <a href="/" style="background-size: auto 30px;">
-                            <span class="sr-only">danielfett.de</span>
-                            <img src="/img/logo-main@print.png" alt="danielfett.de" />
-                        </a>
-                    </h1>
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".js-navbar-header">
-                        <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
-                    </button>
-                </div>
 
-                <h2 class="sr-only">Shortcuts</h2>
-                <ul class="skip-links">
-                    <li><a href="/" title="[Alt + 0]" accesskey="0">Go to home</a></li>
-                    <li><a href="#navigation" title="[Alt + 1]" accesskey="1">Jump to navigation</a></li>
-                    <li><a href="#content" title="[Alt + 2]" accesskey="2">Jump to content</a></li>
-                    <li><a href="#footer" title="[Alt + 3]" accesskey="3">Contact</a></li>
-                </ul>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>
+        {{ page.title }} - danielfett.de
+    </title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="apple-touch-icon" href="/favicon.png">
+    <link rel="icon" type="image/png" href="/favicon.png">
+    <link rel="stylesheet" href="/css/base.css">
+    <link rel="stylesheet" href="/css/default.css">
+    <link rel="stylesheet" href="/css/djangocms_youtube/djangocms_youtube.css">
+    <link rel="stylesheet" href="/css/base16.solarized.light.css">
+</head>
 
-                <div class="navbar-collapse collapse js-navbar-header">
-                    
-                    <nav class="nav navbar-main navbar-right" id="navigation">
-                        <h2 class="sr-only">Navigation</h2>
-                        <ul class="nav navbar-nav">
-                            {% for item in site.data.navigation %}
-                            <li class="child {% if item.link == page.url or item.link == page.parent %}active{% endif %} first">
-                                <a href="{{ item.link }}">
-                                    <span>
-                                        {{ item.title }}
-                                    </span>
-                                </a>
-                                
-                            </li>
-                            {% endfor %}
-
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-        </header>
-
-        <hr class="sr-only">
-        <div class="feature-wrapper js-feature-wrapper">
-            <div class="feature-visual">
-                <img src="/img/visuals/feature-{{ page.visual|default: layout.visual|default: "default" }}.jpg" alt="">
-            </div>
-            <div class="feature-content text-center">
-                <div class="spacer spacer-xs">&nbsp;</div>
-            </div>
-        </div>
-        
-        {% for item in site.data.navigation %}
-        {% if item.link == page.parent %}
+<body id="page-top" class="noscript lang-en tpl-{{ layout.class }}">
+    <header class="navbar navbar-head js-navbar-head navbar-inverse navbar-fixed-top">
         <div class="container">
-            <ol class="breadcrumb">
-                <li class="child"><a href="{{ item.link }}">{{ item.title }}</a></li>
-                <li class="child active">{{ page.title }}</li>
-            </ol>
-        </div>
-        {% endif %}
-        {% endfor %}
-        <!-- start: content -->
-        {{ content }}
-        <!-- end: content -->
-        <hr class="sr-only">
-
-        <!-- start: footer -->
-        <footer class="footer">
-            <h2 class="sr-only" id="footer">Sitemap</h2>
-            <div class="footer-copyright">
-                <div class="container">
-                    
-                    <p><a href="/imprint/" class=" ">Imprint and Privacy Policy</a></p>
-                </div>
+            <div class="navbar-header">
+                <h1 class="navbar-brand">
+                    <a href="/" style="background-size: auto 30px;">
+                        <span class="sr-only">danielfett.de</span>
+                        <img src="/img/logo-main@print.png" alt="danielfett.de" />
+                    </a>
+                </h1>
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target=".js-navbar-header">
+                    <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+                </button>
             </div>
 
-        </footer>
-        <!-- end: footer -->
+            <h2 class="sr-only">Shortcuts</h2>
+            <ul class="skip-links">
+                <li><a href="/" title="[Alt + 0]" accesskey="0">Go to home</a></li>
+                <li><a href="#navigation" title="[Alt + 1]" accesskey="1">Jump to navigation</a></li>
+                <li><a href="#content" title="[Alt + 2]" accesskey="2">Jump to content</a></li>
+                <li><a href="#footer" title="[Alt + 3]" accesskey="3">Contact</a></li>
+            </ul>
 
-        <script src="/js/libs/jquery.min.js"></script>
-        <script src="/js/libs/bootstrap.min.js"></script>
-        <script src="/js/libs/class.min.js"></script>
-        <script src="/js/libs/outdatedBrowser.min.js"></script>
-        <script src="/js/addons/cl.utils.js"></script>
-        <script src="/js/base.js"></script>
-        <script src="/js/addons/cl.explorer.js"></script>
-        <script src="/js/ekko-lightbox.js"></script>
-        <script src="/js/djangocms_youtube/greensock-js/TweenMax.js"></script>
-        <script src="/js/djangocms_youtube/jquery.yt-player.js"></script>
-        <script type="text/javascript">
-            $(function() {
-            $('.js-video-wrapper').youTubePlayer({hl: 'en'});
-            });
-        </script>
-        <script>$(document).delegate('*[data-toggle="lightbox"]', 'click', function(event) {
-             event.preventDefault();
-             $(this).ekkoLightbox({
-                 right_arrow_class: ".fa .fa-angle-right",
-                 left_arrow_class: ".fa .fa-angle-left",
-             });
-         });
-        </script>
+            <div class="navbar-collapse collapse js-navbar-header">
 
-        <div class="browser-outdated" id="outdated" hidden="hidden">
-            <noscript><h3>Please enable JavaScript</h3></noscript>
-            <h3>Your browser is out-of-date!</h3>
-            <p>Update your browser to view this website correctly.</p>
-            <p>
-                <a href="http://outdatedbrowser.com/" class="btn btn-lg btn-outline" id="btnUpdateBrowser">
-                    Update my browser now
-                </a>
-            </p>
-            <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
+                <nav class="nav navbar-main navbar-right" id="navigation">
+                    <h2 class="sr-only">Navigation</h2>
+                    <ul class="nav navbar-nav">
+                        {% for item in site.data.navigation %}
+                        <li
+                            class="child {% if item.link == page.url or item.link == page.parent %}active{% endif %} first">
+                            <a href="{{ item.link }}">
+                                <span>
+                                    {{ item.title }}
+                                </span>
+                            </a>
+
+                        </li>
+                        {% endfor %}
+
+                    </ul>
+                </nav>
+            </div>
         </div>
-    </body>
+    </header>
+
+    <hr class="sr-only">
+    <div class="feature-wrapper js-feature-wrapper">
+        <div class="feature-visual">
+            <img src="/img/visuals/feature-{{ page.visual|default: layout.visual|default: "default" }}.jpg" alt="">
+        </div>
+        <div class="feature-content text-center">
+            <div class="spacer spacer-xs">&nbsp;</div>
+        </div>
+    </div>
+
+    {% for item in site.data.navigation %}
+    {% if item.link == page.parent %}
+    <div class="container">
+        <ol class="breadcrumb">
+            <li class="child"><a href="{{ item.link }}">{{ item.title }}</a></li>
+            <li class="child active">{{ page.title }}</li>
+        </ol>
+    </div>
+    {% endif %}
+    {% endfor %}
+    <!-- start: content -->
+    {{ content }}
+    <!-- end: content -->
+    <hr class="sr-only">
+
+    <!-- start: footer -->
+    <footer class="footer">
+        <h2 class="sr-only" id="footer">Sitemap</h2>
+        <div class="footer-copyright">
+            <div class="container">
+
+                <p><a href="/imprint/" class=" ">Imprint and Privacy Policy</a></p>
+            </div>
+        </div>
+
+    </footer>
+    <!-- end: footer -->
+
+    <script src="/js/libs/jquery.min.js"></script>
+    <script src="/js/libs/bootstrap.min.js"></script>
+    <script src="/js/libs/class.min.js"></script>
+    <script src="/js/libs/outdatedBrowser.min.js"></script>
+    <script src="/js/addons/cl.utils.js"></script>
+    <script src="/js/base.js"></script>
+    <script src="/js/addons/cl.explorer.js"></script>
+    <script src="/js/ekko-lightbox.js"></script>
+    <script src="/js/djangocms_youtube/greensock-js/TweenMax.js"></script>
+    <script src="/js/djangocms_youtube/jquery.yt-player.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $('.js-video-wrapper').youTubePlayer({ hl: 'en' });
+        });
+    </script>
+    <script>$(document).delegate('*[data-toggle="lightbox"]', 'click', function (event) {
+            event.preventDefault();
+            $(this).ekkoLightbox({
+                right_arrow_class: ".fa .fa-angle-right",
+                left_arrow_class: ".fa .fa-angle-left",
+            });
+        });
+        var elements = document.querySelectorAll('img.svg');
+
+        elements.forEach(function (el) {
+            var src = el.src;
+            el.onclick = function () {
+                window.open(el.src);
+            }
+            el.style.cursor = "zoom-in";
+        });
+
+    </script>
+
+    <div class="browser-outdated" id="outdated" hidden="hidden">
+        <noscript>
+            <h3>Please enable JavaScript</h3>
+        </noscript>
+        <h3>Your browser is out-of-date!</h3>
+        <p>Update your browser to view this website correctly.</p>
+        <p>
+            <a href="http://outdatedbrowser.com/" class="btn btn-lg btn-outline" id="btnUpdateBrowser">
+                Update my browser now
+            </a>
+        </p>
+        <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
+    </div>
+</body>
+
 </html>

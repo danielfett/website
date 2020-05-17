@@ -2,7 +2,7 @@
 layout: publication
 title: How (Not) to Use OAuth
 type: Talk
-venue: Secure Munich Talks, Jan. 28 2020
+venue: Secure Munich Talks
 links:
     - type: download
       name: download
