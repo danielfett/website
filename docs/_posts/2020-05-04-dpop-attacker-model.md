@@ -25,32 +25,32 @@ Note that the userinfo endpoint points to an attacker-controlled site.
 
 Attack:
 
-<img src="/img/plantuml/5c161c080fe8a210ac7c45a2cf1aa838b53f55d3d16a55f2730dd3697d22e33e.svg" class="svg">
+<img src="/img/plantuml/0cdb925a9cdcdfac505159dee8588fb659060cc0917f7f001bb27fd81a202fd6.svg" class="svg">
 
 
 ## Compromised/Malicious Resource Server
 
 One of multiple resource servers can become compromised or act maliciously for other reasons.
 
-<img src="/img/plantuml/9479dfbf4a3992fe996b83b57d83f5cadf5094002aca59d58c70a9ae1b5f18b9.svg" class="svg">
+<img src="/img/plantuml/0a9f7a2b950fe131bcd3622b7c4a652744a24388eae986cb96bffbe05aece232.svg" class="svg">
 
 If TLS termination is done at a separate component at the resource server, that component can become compromised, for example by exploting a buffer overflow attack in the reverse proxy: 
 
-<img src="/img/plantuml/4d7c16c317b52a0160ada12f2bbab290d20a795f278484a134dc47e2da0e884f.svg" class="svg">
+<img src="/img/plantuml/d7ebccf61f43d00d5b2b7881874ea14da4965bf9142d40bbf512d4b5f9ddd3d9.svg" class="svg">
 
 
 ## Stolen Token (XSS)
 
 An attacker can leverage an XSS attack to exfiltrate the access token from a single page application. The attacker then tries to use the token. It is not required that the victim is still online for this attack.
 
-<img src="/img/plantuml/12556c20452b9f5fe5d70fc66979105fc2d16e4af725af52d4f467763d71692f.svg" class="svg">
+<img src="/img/plantuml/a423b5d72e059a385a1f3ca8e6d1af6315d35850fb1e7908f4ba33a31b3ab37c.svg" class="svg">
 
 
 ## XSS (Victim is Online)
 
 If a user's browser is online and an attacker has injected JavaScript code into the client's SPA,  the attacker can use the token without exfiltrating it first. There is most likely no defense against this threat except preventing XSS.
 
-<img src="/img/plantuml/acf60eb5a18b637e517ea8255c539e3f3e0b71cd8fb81a0f864735cbeb11bec2.svg" class="svg">
+<img src="/img/plantuml/344c65fd8ad56bd7ee740331acd651ebe568cd9924f43e1cd033c2ee99929d79.svg" class="svg">
 
 > **Note:** It is in general hard or impossible to defend against this threat. It should therefore be considered out of the scope of DPoP.
 
@@ -59,7 +59,7 @@ If a user's browser is online and an attacker has injected JavaScript code into 
 
 If the attacker is able to precompute DPoP tokens, or is able to exfiltrate the secret key needed for generating DPoP proofs along with the access token, DPoP does not protect the access token if no server-generated nonce is used in the proof.
 
-<img src="/img/plantuml/1c74e8f87f86bd3cd6e9affdf4247437aeaaf8c6e8e98d1590dfb6e1fb5a31fc.svg" class="svg">
+<img src="/img/plantuml/185817e572aa17d3d09f852df76fc925ae2a908bd130bc706fc27a5b53f1db3d.svg" class="svg">
 
 > **Recommendation:** Requiring/allowing for a server-sent nonce via the WWW-Authenticate header would improve the security of DPoP.
 
@@ -67,7 +67,7 @@ If the attacker is able to precompute DPoP tokens, or is able to exfiltrate the 
 
 Attacks on TLS might allow for the recovery of strings in encrypted messages that are repeated in multiple messages. One example would be the BREACH attacks against HTTP compression.
 
-<img src="/img/plantuml/5fb7ede5171b7c491d8d070e1a291e359f8925b4f1d84704bc7f81b6c5176e93.svg" class="svg">
+<img src="/img/plantuml/41ea6ca0990bcaf9081318f983ef4208426beae62c11d94ac9952c2d2248994e.svg" class="svg">
 
 
 **Update 1:** Added the correct variant of Online XSS; renamed the one that was previously there to "Precomputed proofs"; added "Exfiltration from Otherwise Secure Channel". Thanks, Neil!

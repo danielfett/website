@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="432px" preserveAspectRatio="none" style="width:694px;height:432px;" version="1.1" viewBox="0 0 694 432" width="694px" zoomAndPan="magnify"><defs/><g><line style="stroke: #AAAAAA; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="43" x2="43" y1="34.2969" y2="375.8906"/><line style="stroke: #AAAAAA; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="218" x2="218" y1="34.2969" y2="375.8906"/><line style="stroke: #AAAAAA; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="346.5" x2="346.5" y1="34.2969" y2="375.8906"/><line style="stroke: #AAAAAA; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="437.5" x2="437.5" y1="34.2969" y2="375.8906"/><line style="stroke: #AAAAAA; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="656.5" x2="656.5" y1="34.2969" y2="375.8906"/><rect fill="#375A7F" height="30.2969" style="stroke: #375A7F; stroke-width: 1.5;" width="71" x="8" y="3"/><text fill="#FFFFFF" font-family="Roboto" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="57" x="15" y="22.9951">Browser</text><rect fill="#375A7F" height="30.2969" style="stroke: #375A7F; stroke-width: 1.5;" width="71" x="8" y="374.8906"/><text fill="#FFFFFF" font-family="Roboto" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="57" x="15" y="394.8857">Browser</text><rect fill="#375A7F" height="30.2969" style="stroke: #375A7F; stroke-width: 1.5;" width="85" x="176" y="3"/><text fill="#FFFFFF" font-family="Roboto" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="71" x="183" y="22.9951">client.com</text><rect fill="#375A7F" height="30.2969" style="stroke: #375A7F; stroke-width: 1.5;" width="85" x="176" y="374.8906"/><text fill="#FFFFFF" font-family="Roboto" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="71" x="183" y="394.8857">client.com</text><rect fill="#375A7F" height="30.2969" style="stroke: #375A7F; stroke-width: 1.5;" width="32" x="330.5" y="3"/><text fill="#FFFFFF" font-family="Roboto" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="18" x="337.5" y="22.9951">AS</text><rect fill="#375A7F" height="30.2969" style="stroke: #375A7F; stroke-width: 1.5;" width="32" x="330.5" y="374.8906"/><text fill="#FFFFFF" font-family="Roboto" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="18" x="337.5" y="394.8857">AS</text><rect fill="#F08080" height="30.2969" style="stroke: #375A7F; stroke-width: 1.5;" width="42" x="416.5" y="3"/><text fill="#FFFFFF" font-family="Roboto" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="28" x="423.5" y="22.9951">RS1</text><rect fill="#F08080" height="30.2969" style="stroke: #375A7F; stroke-width: 1.5;" width="42" x="416.5" y="374.8906"/><text fill="#FFFFFF" font-family="Roboto" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="28" x="423.5" y="394.8857">RS1</text><rect fill="#375A7F" height="30.2969" style="stroke: #375A7F; stroke-width: 1.5;" width="42" x="635.5" y="3"/><text fill="#FFFFFF" font-family="Roboto" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="28" x="642.5" y="22.9951">RS2</text><rect fill="#375A7F" height="30.2969" style="stroke: #375A7F; stroke-width: 1.5;" width="42" x="635.5" y="374.8906"/><text fill="#FFFFFF" font-family="Roboto" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="28" x="642.5" y="394.8857">RS2</text><polygon fill="#375A7F" points="206.5,61.4297,216.5,65.4297,206.5,69.4297,210.5,65.4297" style="stroke: #375A7F; stroke-width: 1.0;"/><line style="stroke: #375A7F; stroke-width: 1.0;" x1="43.5" x2="212.5" y1="65.4297" y2="65.4297"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="32" x="50.5" y="60.3638">Start</text><polygon fill="#375A7F" points="54.5,90.5625,44.5,94.5625,54.5,98.5625,50.5,94.5625" style="stroke: #375A7F; stroke-width: 1.0;"/><line style="stroke: #375A7F; stroke-width: 1.0;" x1="48.5" x2="217.5" y1="94.5625" y2="94.5625"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="93" x="60.5" y="89.4966">Authz Request</text><polygon fill="#375A7F" points="334.5,119.6953,344.5,123.6953,334.5,127.6953,338.5,123.6953" style="stroke: #375A7F; stroke-width: 1.0;"/><line style="stroke: #375A7F; stroke-width: 1.0;" x1="43.5" x2="340.5" y1="123.6953" y2="123.6953"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="93" x="50.5" y="118.6294">Authz Request</text><polygon fill="#375A7F" points="54.5,148.8281,44.5,152.8281,54.5,156.8281,50.5,152.8281" style="stroke: #375A7F; stroke-width: 1.0;"/><polygon fill="#375A7F" points="334.5,148.8281,344.5,152.8281,334.5,156.8281,338.5,152.8281" style="stroke: #375A7F; stroke-width: 1.0;"/><line style="stroke: #375A7F; stroke-width: 1.0; stroke-dasharray: 2.0,2.0;" x1="48.5" x2="340.5" y1="152.8281" y2="152.8281"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="81" x="60.5" y="147.7622">authn, authz</text><polygon fill="#375A7F" points="54.5,177.9609,44.5,181.9609,54.5,185.9609,50.5,181.9609" style="stroke: #375A7F; stroke-width: 1.0;"/><line style="stroke: #375A7F; stroke-width: 1.0;" x1="48.5" x2="345.5" y1="181.9609" y2="181.9609"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="151" x="60.5" y="176.895">Authorization Response</text><polygon fill="#375A7F" points="206.5,207.0938,216.5,211.0938,206.5,215.0938,210.5,211.0938" style="stroke: #375A7F; stroke-width: 1.0;"/><line style="stroke: #375A7F; stroke-width: 1.0;" x1="43.5" x2="212.5" y1="211.0938" y2="211.0938"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="151" x="50.5" y="206.0278">Authorization Response</text><polygon fill="#375A7F" points="334.5,236.2266,344.5,240.2266,334.5,244.2266,338.5,240.2266" style="stroke: #375A7F; stroke-width: 1.0;"/><line style="stroke: #375A7F; stroke-width: 1.0;" x1="218.5" x2="340.5" y1="240.2266" y2="240.2266"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="94" x="225.5" y="235.1606">Token Request</text><polygon fill="#375A7F" points="229.5,265.3594,219.5,269.3594,229.5,273.3594,225.5,269.3594" style="stroke: #375A7F; stroke-width: 1.0;"/><line style="stroke: #375A7F; stroke-width: 1.0;" x1="223.5" x2="345.5" y1="269.3594" y2="269.3594"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="104" x="235.5" y="264.2935">Token Response</text><polygon fill="#375A7F" points="425.5,309.625,435.5,313.625,425.5,317.625,429.5,313.625" style="stroke: #375A7F; stroke-width: 1.0;"/><line style="stroke: #375A7F; stroke-width: 1.0;" x1="218.5" x2="431.5" y1="313.625" y2="313.625"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="195" x="225.5" y="293.4263">POST https://rs1.com/resource</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="89" x="225.5" y="308.5591">Authorization:</text><text fill="#0000FF" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="96" x="318.5" y="308.5591">Bearer 42xyz...</text><polygon fill="#375A7F" points="644.5,353.8906,654.5,357.8906,644.5,361.8906,648.5,357.8906" style="stroke: #375A7F; stroke-width: 1.0;"/><line style="stroke: #375A7F; stroke-width: 1.0;" x1="437.5" x2="650.5" y1="357.8906" y2="357.8906"/><text fill="#FF0000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="195" x="444.5" y="337.6919">POST https://rs2.com/resource</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="89" x="444.5" y="352.8247">Authorization:</text><text fill="#0000FF" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="96" x="537.5" y="352.8247">Bearer 42xyz...</text><text fill="#888888" font-family="sans-serif" font-size="10" lengthAdjust="spacingAndGlyphs" textLength="61" x="621.5" y="419.4697">danielfett.de</text><!--MD5=[875fa22a90ca8239499157bc8fb827cd]
+@startuml
+hide stereotype
+skinparam shadowing false
+skinparam sequence {
+ArrowColor #375a7f
+LifeLineBorderColor #aaa
+BoundaryBackgroundColor #f00
+
+ParticipantBorderColor #375a7f
+ParticipantBackgroundColor #375a7f
+ParticipantFontColor #fff
+ParticipantFontName Roboto
+ParticipantFontSize 14
+
+BoxBackgroundColor #f0f0ff
+BoxBorderColor transparent
+ParticipantBackgroundColor<<Attacker>> #F08080
+}
+
+skinparam note {
+BackgroundColor #CEE1F5
+BorderColor #CEE1F5
+FontColor #000
+
+BackgroundColor<<warning>> #FFCEB5
+BorderColor<<warning>> #FFCEB5
+
+BackgroundColor<<ok>> #C6EAA6
+BorderColor<<ok>> #C6EAA6
+}
+
+right footer danielfett.de
+participant Browser
+participant client.com
+participant AS
+participant RS1 <<Attacker>>
+participant RS2
+
+Browser -> client.com: Start
+client.com -> Browser: Authz Request
+Browser -> AS: Authz Request
+Browser <- -> AS: authn, authz
+AS -> Browser: Authorization Response
+Browser -> client.com: Authorization Response
+client.com -> AS: Token Request
+AS -> client.com: Token Response
+client.com -> RS1: POST https://rs1.com/resource\nAuthorization: <font color=blue>Bearer 42xyz...</font>
+RS1 -> RS2: <font color=red>POST https://rs2.com/resource</font>\nAuthorization: <font color=blue>Bearer 42xyz...</font>
+@enduml
+
+PlantUML version 1.2020.08(Sun Apr 26 14:08:22 UTC 2020)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Java Version: 1.8.0_252-b09
+Operating System: Linux
+Default Encoding: UTF-8
+Language: en
+Country: null
+--></g></svg>

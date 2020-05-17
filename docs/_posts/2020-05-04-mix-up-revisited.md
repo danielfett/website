@@ -15,7 +15,7 @@ Assume that a user wants to start an OAuth flow using the malicious OAuth provid
 Even if all connections are properly secured via TLS, the following attack can be mounted by `attacker.com`:
 
 
-<img src="/img/plantuml/8a5fa933f3ef5fa43d2bd62618588dbf2660a706dfcb0a9b2b46db4cf107cf46.svg" class="svg">
+<img src="/img/plantuml/ebf5295fce4210ed0ba91481923b221b150cce6ac5952918a1bd829f27104c58.svg" class="svg">
 
 In the attack, the attacker's authorization server redirects the user to an honest OP's authorization server. The attacker replaces the `client_id` provided by the client with the one that the client uses for `honest.com` and replaces the `code_challenge` parameter with a different value.
 
@@ -34,13 +34,13 @@ The following two approaches can be used for this:
 
  * An `iss` parameter in the authorization response could tell client.com about the identity of the authorization server that was used. 
 
-<img src="/img/plantuml/7819cc1e4f68875d6e1eb81fff9c6462142a1a56c0c1122384ca9c7606034e3e.svg" class="svg">
+<img src="/img/plantuml/5d7dbba1cb49b76c99ca003dfef8c28e3def4e4f26e56e56b0fa85282e00a830.svg" class="svg">
 
 
  * Encoding the authorization server's identity in the redirect_uri can help as well. In this case, the client compares the redirection endpoint where it expects the user to land with the one registered for the expected authorization server.
 
 
-<img src="/img/plantuml/a2427a68806472635486b02dbb7fef15b3cd45219edc32174697e0a3923b46da.svg" class="svg">
+<img src="/img/plantuml/1d2a774e6cd11acab7674bc8658f52947a1565146bf8c730d0ad70892b78af0b.svg" class="svg">
 
 **Why does that work?**
 
