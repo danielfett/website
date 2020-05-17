@@ -1,1 +1,4 @@
-docs/_site/
+docs/_site/**
+docs/tmp/**
+_site/**
+.vscode/**

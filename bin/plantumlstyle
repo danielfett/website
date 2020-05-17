@@ -2,7 +2,8 @@ hide stereotype
 skinparam shadowing false
 skinparam sequence {
 ArrowColor #375a7f
-LifeLineBorderColor #ccc
+LifeLineBorderColor #aaa
+BoundaryBackgroundColor #f00
 
 ParticipantBorderColor #375a7f
 ParticipantBackgroundColor #375a7f
@@ -10,8 +11,9 @@ ParticipantFontColor #fff
 ParticipantFontName Roboto
 ParticipantFontSize 14
 
-ParticipantBorderColor<<Attacker>> #C3744B
-ParticipantBackgroundColor<<Attacker>> #C3744B
+BoxBackgroundColor #f0f0ff
+BoxBorderColor transparent
+ParticipantBackgroundColor<<Attacker>> #F08080
 }
 
 skinparam note {
