@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="404px" preserveAspectRatio="none" style="width:628px;height:404px;" version="1.1" viewBox="0 0 628 404" width="628px" zoomAndPan="magnify"><defs/><g><line style="stroke: #AAAAAA; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="43" x2="43" y1="34.2969" y2="347.8906"/><line style="stroke: #AAAAAA; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="304" x2="304" y1="34.2969" y2="347.8906"/><line style="stroke: #AAAAAA; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="579.5" x2="579.5" y1="34.2969" y2="347.8906"/><rect fill="#375A7F" height="30.2969" style="stroke: #375A7F; stroke-width: 1.5;" width="71" x="8" y="3"/><text fill="#FFFFFF" font-family="Roboto" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="57" x="15" y="22.9951">Browser</text><rect fill="#375A7F" height="30.2969" style="stroke: #375A7F; stroke-width: 1.5;" width="71" x="8" y="346.8906"/><text fill="#FFFFFF" font-family="Roboto" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="57" x="15" y="366.8857">Browser</text><rect fill="#375A7F" height="30.2969" style="stroke: #375A7F; stroke-width: 1.5;" width="85" x="262" y="3"/><text fill="#FFFFFF" font-family="Roboto" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="71" x="269" y="22.9951">client.com</text><rect fill="#375A7F" height="30.2969" style="stroke: #375A7F; stroke-width: 1.5;" width="85" x="262" y="346.8906"/><text fill="#FFFFFF" font-family="Roboto" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="71" x="269" y="366.8857">client.com</text><rect fill="#375A7F" height="30.2969" style="stroke: #375A7F; stroke-width: 1.5;" width="64" x="547.5" y="3"/><text fill="#FFFFFF" font-family="Roboto" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="50" x="554.5" y="22.9951">as.com</text><rect fill="#375A7F" height="30.2969" style="stroke: #375A7F; stroke-width: 1.5;" width="64" x="547.5" y="346.8906"/><text fill="#FFFFFF" font-family="Roboto" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="50" x="554.5" y="366.8857">as.com</text><polygon fill="#375A7F" points="292.5,61.4297,302.5,65.4297,292.5,69.4297,296.5,65.4297" style="stroke: #375A7F; stroke-width: 1.0;"/><line style="stroke: #375A7F; stroke-width: 1.0;" x1="43.5" x2="298.5" y1="65.4297" y2="65.4297"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="121" x="50.5" y="60.3638">Use https://as.com</text><polygon fill="#375A7F" points="54.5,151.0938,44.5,155.0938,54.5,159.0938,50.5,155.0938" style="stroke: #375A7F; stroke-width: 1.0;"/><line style="stroke: #375A7F; stroke-width: 1.0;" x1="48.5" x2="303.5" y1="155.0938" y2="155.0938"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="187" x="60.5" y="89.4966">Location: https://as.com/auth</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="205" x="92.5" y="104.6294">?redirect_uri=https://client.com/</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="150" x="108.5" y="119.7622">&amp;client_id=client_at_as</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="0" x="108.5" y="134.895"/><text fill="#008000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="61" x="108.5" y="134.895">&amp;nonce=</text><text fill="#008000" font-family="sans-serif" font-size="13" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="8" x="169.5" y="134.895">n</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="23" x="108.5" y="150.0278">&amp;...</text><polygon fill="#375A7F" points="567.5,180.2266,577.5,184.2266,567.5,188.2266,571.5,184.2266" style="stroke: #375A7F; stroke-width: 1.0;"/><line style="stroke: #375A7F; stroke-width: 1.0;" x1="43.5" x2="573.5" y1="184.2266" y2="184.2266"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="173" x="50.5" y="179.1606">GET https://as.com/auth?...</text><polygon fill="#375A7F" points="54.5,209.3594,44.5,213.3594,54.5,217.3594,50.5,213.3594" style="stroke: #375A7F; stroke-width: 1.0;"/><polygon fill="#375A7F" points="567.5,209.3594,577.5,213.3594,567.5,217.3594,571.5,213.3594" style="stroke: #375A7F; stroke-width: 1.0;"/><line style="stroke: #375A7F; stroke-width: 1.0; stroke-dasharray: 2.0,2.0;" x1="48.5" x2="573.5" y1="213.3594" y2="213.3594"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="216" x="60.5" y="208.2935">user authentication, authorization</text><polygon fill="#375A7F" points="54.5,238.4922,44.5,242.4922,54.5,246.4922,50.5,242.4922" style="stroke: #375A7F; stroke-width: 1.0;"/><line style="stroke: #375A7F; stroke-width: 1.0;" x1="48.5" x2="578.5" y1="242.4922" y2="242.4922"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="320" x="60.5" y="237.4263">Redirect to https://client.com/?code=c&amp;id_token=</text><text fill="#008000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="61" x="380.5" y="237.4263">{"nonce":</text><text fill="#008000" font-family="sans-serif" font-size="13" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="8" x="441.5" y="237.4263">n</text><text fill="#008000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="103" x="449.5" y="237.4263">, "c_hash":hash(</text><text fill="#008000" font-family="sans-serif" font-size="13" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="7" x="552.5" y="237.4263">c</text><text fill="#008000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="13" x="559.5" y="237.4263">)}</text><polygon fill="#375A7F" points="292.5,267.625,302.5,271.625,292.5,275.625,296.5,271.625" style="stroke: #375A7F; stroke-width: 1.0;"/><line style="stroke: #375A7F; stroke-width: 1.0;" x1="43.5" x2="298.5" y1="271.625" y2="271.625"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="193" x="50.5" y="266.5591">GET https://client.com/?code=</text><text fill="#000000" font-family="sans-serif" font-size="13" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="7" x="243.5" y="266.5591">c</text><polygon fill="#375A7F" points="567.5,296.7578,577.5,300.7578,567.5,304.7578,571.5,300.7578" style="stroke: #375A7F; stroke-width: 1.0;"/><line style="stroke: #375A7F; stroke-width: 1.0;" x1="304.5" x2="573.5" y1="300.7578" y2="300.7578"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="127" x="311.5" y="295.6919">POST /token?code=</text><text fill="#000000" font-family="sans-serif" font-size="13" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="7" x="438.5" y="295.6919">c</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="106" x="445.5" y="295.6919">&amp;redirect_uri=...</text><polygon fill="#375A7F" points="315.5,325.8906,305.5,329.8906,315.5,333.8906,311.5,329.8906" style="stroke: #375A7F; stroke-width: 1.0;"/><line style="stroke: #375A7F; stroke-width: 1.0;" x1="309.5" x2="578.5" y1="329.8906" y2="329.8906"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="157" x="321.5" y="324.8247">access token, id_token=</text><text fill="#008000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="61" x="478.5" y="324.8247">{"nonce":</text><text fill="#008000" font-family="sans-serif" font-size="13" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="8" x="539.5" y="324.8247">n</text><text fill="#008000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="547.5" y="324.8247">}</text><text fill="#888888" font-family="sans-serif" font-size="10" lengthAdjust="spacingAndGlyphs" textLength="61" x="555.5" y="391.4697">danielfett.de</text><!--MD5=[ac3ce862e9b8d8442cb5678d3700e753]
+@startuml
+hide stereotype
+skinparam shadowing false
+skinparam sequence {
+ArrowColor #375a7f
+LifeLineBorderColor #aaa
+BoundaryBackgroundColor #f00
+
+ParticipantBorderColor #375a7f
+ParticipantBackgroundColor #375a7f
+ParticipantFontColor #fff
+ParticipantFontName Roboto
+ParticipantFontSize 14
+
+BoxBackgroundColor #f0f0ff
+BoxBorderColor transparent
+ParticipantBackgroundColor<<Attacker>> #F08080
+}
+
+skinparam note {
+BackgroundColor #CEE1F5
+BorderColor #CEE1F5
+FontColor #000
+
+BackgroundColor<<warning>> #FFCEB5
+BorderColor<<warning>> #FFCEB5
+
+BackgroundColor<<ok>> #C6EAA6
+BorderColor<<ok>> #C6EAA6
+}
+
+right footer danielfett.de
+participant Browser
+participant client.com
+participant as.com
+
+Browser -> client.com: Use https://as.com
+client.com -> Browser: Location: https://as.com/auth\n        ?redirect_uri=https://client.com/\n            &client_id=client_at_as\n            <font color=green>&nonce=<i>n</i>\n            &...
+
+Browser -> as.com: GET https://as.com/auth?...
+Browser <- -> as.com: user authentication, authorization
+as.com -> Browser: Redirect to https://client.com/?code=c&id_token=<font color=green>{"nonce":<i>n</i>, "c_hash":hash(<i>c</i>)}
+Browser -> client.com: GET https://client.com/?code=<i>c</i>
+client.com -> as.com: POST /token?code=<i>c</i>&redirect_uri=...
+as.com -> client.com: access token, id_token=<font color=green>{"nonce":<i>n</i>}
+@enduml
+
+PlantUML version 1.2020.08(Sun Apr 26 14:08:22 UTC 2020)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Java Version: 1.8.0_252-b09
+Operating System: Linux
+Default Encoding: UTF-8
+Language: en
+Country: null
+--></g></svg>
