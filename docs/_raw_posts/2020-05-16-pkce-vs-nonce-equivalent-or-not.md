@@ -268,10 +268,10 @@ For flows with Nonce, the attacker might already know the `nonce` parameter that
 
 As far as I can see, however, this does not help the attacker. He would still need to get the (confidential!) client to expect the same nonce as the one bound to the code. In a sane client implementation, there is no way for the attacker to achieve this.
 
-## Nonce to PKCE Sidestep Attack
+## Nonce/PKCE Sidestep Attack
 PKCE and Nonce seem to be safe choices in defending against code injection attacks for confidential clients. Also, a combination of the two is safe (i.e., client and AS always use/expect both PKCE and Nonce). For public clients, PKCE must be used.
 
-A circumvention of both mechanisms, however, is possible if an AS allows a client to choose between PKCE and Nonce and the client makes use of this freedom. I propose to call this attack the **Nonce to PKCE Sidestep Attack**.
+A circumvention of both mechanisms, however, is possible if an AS allows a client to choose between PKCE and Nonce and the client makes use of this freedom. I propose to call this attack the **Nonce/PKCE Sidestep Attack**.
 
 Assume that the client uses PKCE for some flows (e.g., pure-OAuth flows) and Nonce for other flows (e.g., those using OpenID Connect) at the same authorization server. Now, an attacker who has stolen an authorization code that was bound to a Nonce could inject this code into a pure-OAuth authorization flow that uses PKCE. The client will send the code, along with a (now not matching) `code_verifier` to the server. The server will ignore the `code_verifier` (as it was not expected) and send back an access token and ID token to the client. The client will ignore the ID token (since it was not expected) but use the access token.
 
