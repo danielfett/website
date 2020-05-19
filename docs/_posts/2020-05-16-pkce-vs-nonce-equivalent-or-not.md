@@ -135,6 +135,17 @@ When `state` is used for CSRF protection, OAuth error responses from the authori
 
 > **Recommendation:** Although the value of this attack seems to be limited, it might be worthwhile to think about proper defense mechanisms. One way would be to return the `code_challenge` or `nonce` in the error response to the client. Since it is already important that code challenges/verifiers and nonces must not be reused, there does not seem to be much value in hashing the `code_challenge` or `nonce` parameter before returning them to the client. 
 
+### Downgrade Attack on PKCE
+
+If an authorization server does not enforce PKCE, but instead detects client support by checking for a `code_challenge` parameter in the response, downgrade CSRF attacks are possible, as [pointed out by Nov Matake](https://mailarchive.ietf.org/arch/msg/oauth/qrLAf3nWRt8HAFkO49qGrPRuelo/). 
+
+To conduct the attack, an attacker would just start an authorization flow with the targeted client, but remove the `code_challenge` parameter from the authorization request. If the authorization server allows for flows without PKCE, it will create a code that is not bound to a code challenge. The attacker can then inject this code into the user's session with the authorization server, even if PKCE was used in that session.
+
+
+The following figure shows the attack:
+
+<img src="/img/plantuml/b936c9ccd8c1ca76156cef40d4262ba1fa929fc43214cf2549d44176ba5b458b.svg" class="svg">
+
 ### CSRF: Summary
 
 | Setting                                | Protection by `state` | by PKCE | by Nonce |
@@ -163,7 +174,6 @@ Without any additional security measures, the attacker can just redeem the code 
 
 When PKCE is used, the attacker would need to know the `code_verifier` that matches the `code_challenge` sent in the authorization request. The only party that can know the `code_verifier` is the client, where the value is securely bound to the user's session. As long as the attacker does not learn the user's session identifier with the client, there is no way for the attacker to make use of the code.
 
-As a side note, PKCE uses SHA256 to create the `code_challenge`. This is intended to prevent misuse of the stolen code even is an attacker can read the authorization request. In practice, this just forces the attacker to resort to an admittedly more complex code injection attack (see below) in which the attacker can re-use the `code_challenge` from the original request. The attack is described in more detail in our [paper on the security of FAPI](https://danielfett.de/publications/2019-02-01-openid-fapi-formal-analysis/).
 
 #### Nonce
 
@@ -173,7 +183,7 @@ Since Nonce is checked on the client, the attacker can just redeem the code hims
 
 Now, let's consider confidential clients where an attacker might be forced to use code injection to have the client redeem the code for him.
 
-This figure shows a code injection attack (note that the client and authorization server are the same in both sessions):
+This figure shows a code injection attack (note again that the client and authorization server are the same in both sessions):
 
 <img src="/img/plantuml/65d627f6be98213e441611b4f369788662d86ea4fce7a98817eaaa9ace0bfb22.svg" class="svg">
 
@@ -204,6 +214,15 @@ The root cause for the attack is that the client and the server allow for a dyna
 > **Recommendation:** To avoid the Nonce to PKCE Sidestep Attack, clients **must not** switch between using only PKCE and only Nonce (but may use both in parallel, or switch between using only PKCE and PKCE+Nonce). Authorization servers **must enforce PKCE** unless they know that the client uses Nonce for **all** of its flows (and checks the Nonce value). The presence of a `nonce` parameter in the authorization request is **not sufficient** to determine if a client actually checks the `nonce` claim in the ID token.
 
 
+### Side Note: Stronger Attacker Model
+PKCE uses SHA256 to create the `code_challenge`. This is intended to prevent misuse of the stolen code even is an attacker can read the authorization request. Depending of the exact attack scenario, it might be a small step from reading the authorization request to actually injecting a new authorization request into the user's browser, although many details depend on the concrete deployment.
+
+In this expanded attacker model (i.e., the attacker can inject the authorization request and read the authorization response), we have the same situation as in the PKCE Chosen Challenge attack described in our [paper on the security of FAPI](https://danielfett.de/publications/2019-02-01-openid-fapi-formal-analysis/) and [presented at IETF 105](https://datatracker.ietf.org/doc/slides-105-oauth-sessa-oauth-security-topics/). This can be considered a special case of code injection.
+
+The same attack applies if Nonce is used to protect the flow. 
+
+On the one hand, it is hard or impossible to protect any redirect-based protocols against these attacks. On the other hand, to perform the attack in practice, the attacker needs good timing and ideally some side-channel information about the user (e.g., knowing when the user wants to start an authorization flow).
+
 ### Misuse of Stolen Codes: Summary
 
 For public clients, only PKCE provides sufficient protection. For confidential clients, always using PKCE or always using Nonce are safe choices. In any case, PKCE can be combined with Nonce. However, a dynamic switch between "PKCE-only" and "Nonce-only" flows must be avoided. 
@@ -216,6 +235,8 @@ For public clients, only PKCE provides sufficient protection. For confidential c
 
 ## Conclusion 
 
-In terms of protection against CSRF and code misuse, PKCE and Nonce provide similar levels of security, with a slight advantage for PKCE. Secondary criteria not analyzed here should be taken into consideration, such as deployment complexity, use cases, robustness against implementation errors, etc. Interestingly, the SHA256 hash of the PKCE code challenge does not play a major role in the scenarios evaluated here. Since the `S256` code challenge method comes at almost zero cost, it is still preferable over the `plain` method defined in RFC7636.
+In terms of protection against CSRF and code misuse, PKCE and Nonce provide similar levels of security. Secondary criteria not analyzed here should be taken into consideration, such as deployment complexity, use cases, robustness against implementation errors, etc. 
 
-To avoid sidestepping the PKCE and Nonce checks, authorization servers and clients need to agree on and continuously use one of the methods. For deployments with both OAuth and OIDC flows, PKCE should always be used and Nonce can be used additionally for OIDC flows.
+To avoid sidestepping or downgrading the PKCE and Nonce checks, authorization servers and clients need to agree on and continuously use one of the methods. For deployments with both OAuth and OIDC flows, PKCE should always be used and Nonce can be used additionally for OIDC flows.
+
+> **Update 1 (2020-05-19):** Clarified reference to PKCE Chosen Challenge attack, now in the subsection "Side Note: Stronger Attacker Model" (thanks for the feedback, [Aaron](https://aaronparecki.com/)) and added description of the PKCE Downgrade attack (thanks to [Nov](https://matake.jp/)).
