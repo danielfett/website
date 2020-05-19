@@ -8,6 +8,7 @@ permalink: pretty
 plugins:
   - jekyll-redirect-from
   - jekyll-feed
+  - jekyll-sitemap
 
 markdown: kramdown
 highlighter: rouge
@@ -25,3 +26,4 @@ url: 'https://danielfett.de'
 excerpt_separator: '<!--more-->'
 feed:
   excerpt_only: true
+
