@@ -13,9 +13,10 @@ lang: de
 
 <p>Und weil der Name "Reguläre Ausdrücke" etwas unhandlich ist, heißen die "Regular Expressions" auch oft einfach nur "RegEx(en)".</p>
 
-<h2 id="Einfhrung">Einführung</h2>
-
 <p>Hier gibts ein kleines Tutorial zu diesen esoterisch anmutenden aber unglaublich mächtigen Zeichenketten, die beim unbedarften Betrachter Assoziationen eines kleinen Kindes und dessen ersten Versuchen an der Tastatur auslösen.</p>
+<!--more-->
+
+<h2 id="Einfhrung">Einführung</h2>
 
 <p><strong>Was sind reguläre Ausdrücke?</strong> Wie gesagt, können mit regulären Ausdrücken Zeichenketten auf eine bestimmte Zusammensetzung geprüft werden, wie dies z.B. bei Anwendungen wichtig ist, die Eingaben eines Benutzers erwarten.</p>
 

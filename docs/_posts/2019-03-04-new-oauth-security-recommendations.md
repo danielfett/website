@@ -5,6 +5,7 @@ layout: publication
 ---
 
 The [OAuth Security BCP](https://tools.ietf.org/html/draft-ietf-oauth-security-topics) contains a number of new and updated recommendations on the usage of OAuth 2.0. I recommend reading the whole document to understand the threats and attacks that lead to these guidelines. As a quick reference, the following table shows an overview of the most important new recommendations:
+<!--more-->
 
 | New Recommendation                                                                                       | Reason                                                                        |
 |----------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------|

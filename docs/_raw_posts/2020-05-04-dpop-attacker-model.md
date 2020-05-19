@@ -6,6 +6,7 @@ toc: yes
 ---
 
 This document outlines attacker models considered for [DPoP](https://tools.ietf.org/html/draft-ietf-oauth-dpop). 
+<!--more-->
 
 > **Note:** DPoP is still an IETF working group draft. This is not a normative document and the final attacker model for DPoP might look different to the one presented here!
 

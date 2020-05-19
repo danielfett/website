@@ -9,6 +9,7 @@ type: Analysis
 Traditionally, the `state` parameter is used to provide protection against Cross-Site Request Forgery (CSRF) attacks on OAuth. The newer mechanisms [PKCE (RFC7636)](https://tools.ietf.org/html/rfc7636) and the [OpenID Connect parameter nonce](https://openid.net/specs/openid-connect-core-1_0.html) not only protect against CSRF, but they also provide some level of protection against [Code Injection](https://elib.uni-stuttgart.de/bitstream/11682/10214/1/%27An%20Expressive%20Formal%20Model%20of%20the%20Web%20Infrastructure.pdf) attacks.
 
 In this  document, I evaluate (informally) the differences in the provided protection levels of `state`, PKCE, and Nonce against CSRF and misuse of stolen codes.
+<!--more-->
 
 <div class="alert alert-info" role="alert">
   <b>Disclaimer:</b> This document discusses theoretical or practical attacks on OAuth or OpenID Connect. Nonetheless, both standards can be used securely as shown by, among others, formal analyses. With the appropriate security mechanisms, both are even suitable for high-risk environments. As with any security protocol, a careful evaluation of potential threats and the required security mechanisms is indispensable when designing a solution based on OAuth/OpenID Connect.

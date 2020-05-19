@@ -7,6 +7,7 @@ permalink: pretty
 
 plugins:
   - jekyll-redirect-from
+  - jekyll-feed
 
 markdown: kramdown
 highlighter: rouge
@@ -14,3 +15,13 @@ highlighter: rouge
 kramdown:
   input: GFM
   syntax_highlighter: rouge
+
+author: Daniel Fett
+
+title: 'danielfett.de'
+
+url: 'https://danielfett.de'
+
+excerpt_separator: '<!--more-->'
+feed:
+  excerpt_only: true

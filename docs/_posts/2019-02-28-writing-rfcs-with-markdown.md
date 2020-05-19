@@ -7,6 +7,7 @@ layout: publication
 [RFC7749][1] defines Version 2 of "xml2rfc", an XML-based format for authoring RFCs. The xml2rfc v2 format is the preferred format for uploading RFCs to the IETF. There is also the newer [Version 3][2] of xml2rfc, but it is not yet supported for IETF RFCs. (The Version 3 XML still looks similar to Version 2 XML, but supports more features, for example, figures in enumerations.)
 
 As far as I can see, there are **no good cross-platform editors for xml2rfc** that support highlighting, source code formatting, and a preview of the generated files. For markdown, however, all this exists!
+<!--more-->
 
 [mmark][3] is a markdown processor, written in Go, that **translates markdown files into xml2rfc** (v2 or v3). It adds a special syntax for meta information (such as the status of the RFC) and supports other features, such as including other files, which is particularly handy for long RFCs. Markdown enjoys a good support in many editors, including online editors such as the one provided by GitHub. This makes writing RFCs significantly easier.
 
