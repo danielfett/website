@@ -41,7 +41,7 @@ The usage of nonce is mandated by OpenID Connect Core for some flows:
 | ----------------------- | -------------------------------------------------------------------- | -------- |
 | authorization code flow | `code`                                                               | OPTIONAL |
 | implicit flow           | `id_token` &middot; `id_token token`                                 | REQUIRED |
-| hybrid flow             | `code id_token` &middot; `code token` &middot; `code id_token token` | OPTIONAL |
+| hybrid flow             | `code id_token` &middot; `code token` &middot; `code id_token token` | REQUIRED |
 
 Of course, to have an effect against CSRF and Code Injection, Nonce must be used even if it is optional in OpenID Connect.
 
@@ -138,7 +138,7 @@ When `state` is used for CSRF protection, OAuth error responses from the authori
 
 ### Downgrade Attack on PKCE
 
-If an authorization server does not enforce PKCE, but instead detects client support by checking for a `code_challenge` parameter in the response, downgrade CSRF attacks are possible, as [pointed out by Nov Matake](https://mailarchive.ietf.org/arch/msg/oauth/qrLAf3nWRt8HAFkO49qGrPRuelo/). 
+If an authorization server does not enforce PKCE, but instead detects client support by checking for a `code_challenge` parameter in the authorization request, downgrade CSRF attacks are possible, as [pointed out by Nov Matake](https://mailarchive.ietf.org/arch/msg/oauth/qrLAf3nWRt8HAFkO49qGrPRuelo/). 
 
 To conduct the attack, an attacker would just start an authorization flow with the targeted client, but remove the `code_challenge` parameter from the authorization request. If the authorization server allows for flows without PKCE, it will create a code that is not bound to a code challenge. The attacker can then inject this code into the user's session with the authorization server, even if PKCE was used in that session.
 
