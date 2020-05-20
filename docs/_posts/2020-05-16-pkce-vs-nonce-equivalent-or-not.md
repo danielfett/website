@@ -241,3 +241,5 @@ In terms of protection against CSRF and code misuse, PKCE and Nonce provide simi
 To avoid sidestepping or downgrading the PKCE and Nonce checks, authorization servers and clients need to agree on and continuously use one of the methods. For deployments with both OAuth and OIDC flows, PKCE should always be used and Nonce can be used additionally for OIDC flows.
 
 > **Update 1 (2020-05-19):** Clarified reference to PKCE Chosen Challenge attack, now in the subsection "Side Note: Stronger Attacker Model" (thanks for the feedback, [Aaron](https://aaronparecki.com/)) and added description of the PKCE Downgrade attack (thanks to [Nov](https://matake.jp/)).
+
+> **Update 2 (2020-05-20):** Fixed mistakes in an attack description and the "Nonce required" table (found by [Brian](https://twitter.com/__b_c), thanks!).
