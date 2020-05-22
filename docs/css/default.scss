@@ -1,7 +1,6 @@
 ---
 ---
 
-
 .pretitlebar {
     margin-bottom: -2ex;
     margin-top: 2ex;
@@ -28,7 +27,7 @@ h1 {
 }
 
 .toc h2 {
-    margin-top:0px;
+    margin-top: 0px;
 }
 
 ul {
@@ -46,46 +45,66 @@ ul {
     margin-bottom: 0.5em;
 }
 
-.footer{
+.footer {
     height: initial;
 }
 
 .h1-grey {
     color: #666;
+}
+.content {
+    img {
+        max-width: 100%;
+        margin-top: 1ex;
+        margin-bottom: 2ex;
+        border: 1px solid #999;
+        width: auto;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+    table {
+        border: none;
+        font-size: 0.9em;
+        max-width: 100%;
+        margin-top: 1ex;
+        margin-bottom: 2ex;
+    }
+    th,
+    td {
+        border: none;
+        padding: 4px;
+        vertical-align: top;
+    }
+    th {
+        color: #375a7f;
+        border-bottom: 2px solid #000;
+    }
 
-}
-table, .svg {
-    max-width: 100%;
-    margin-top: 1ex;
-    margin-bottom: 2ex;
-}
-table {
-    border: none;
-    font-size: .9em;
-}
-th, td {
-    border: none;
-    padding: 4px;
-    vertical-align: top;
-}
-th {
-    color: #375a7f;
-    border-bottom: 2px solid #000;
-}
+    tr {
+        border-bottom: 1px solid #000;
+    }
+    th,
+    td {
+        padding-right: 15px;
+    }
 
-tr {
-    border-bottom: 1px solid #000;
-}
-th, td {
-    padding-right: 15px;
-}
+    code {
+        color: #375a7f;
+        background-color: #f0f0f0;
+    }
 
-code {
-    color: #375a7f;
-    background-color: #f0f0f0;
-}
+    blockquote {
+        font-size: inherit;
+        border-left: 5px solid #375a7f;
+    }
 
-blockquote {
-    font-size: inherit;
-    border-left: 5px solid #375a7f;
+    .footnotes::before{
+        content: '';
+        width: 30%;
+        border-top: 1px solid #999;
+        display: block;
+        margin-top: 3em;
+        margin-bottom: 1ex;
+    }
 }
