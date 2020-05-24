@@ -7,6 +7,8 @@ links:
     - type: play
       name: watch (youtube)
       href: https://youtu.be/rH8CQbGoDDY
+redirect_from:
+  - /publications/2019-12-10-das-sicherheitsupgrade-fuer-oauth/
 ---
 
 Egal ob Nutzer oder Entwickler: Früher oder später kommt praktisch

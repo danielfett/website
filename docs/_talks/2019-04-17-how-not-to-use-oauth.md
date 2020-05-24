@@ -10,6 +10,8 @@ links:
     - type: play
       name: watch
       href: https://www.youtube.com/watch?v=mGSp-vsewxI
+redirect_from:
+  - /publications/2019-04-17-how-not-to-use-oauth/
 ---
 
 OAuth is the most important framework for federated authorization on

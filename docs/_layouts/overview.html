@@ -4,16 +4,18 @@ class: fullwidth
 ---
 
 <div class="container">
-    <div  class="container">
-        <div  class="row">
-            <div  class="col-sm-24">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-24">
                 <h2>Articles</h2>
                 <ul class="more-space-list">
                     {% for link in site.posts %}
                     <li>
-                        <b>{{ link.date|date:"%Y-%m-%d" }}</b> &nbsp; {% if link.type %}{{ link.type }} | {% endif %} <a href="{{ link.url }}">{{ link.title }}</a> {% if link.tag %}<div class="label label-primary">{{ link.tag }}</div>{% endif %}
-                        
-                        
+                        <b>{{ link.date|date:"%Y-%m-%d" }}</b> &nbsp; {% if link.type %}{{ link.type }} | {% endif %} <a
+                            href="{{ link.url }}">{{ link.title }}</a> {% if link.tag %}<div
+                            class="label label-primary">{{ link.tag }}</div>{% endif %}
+
+
                     </li>
                     {% endfor %}
                 </ul>
@@ -22,20 +24,49 @@ class: fullwidth
     </div>
 </div>
 
+{% assign talks = site.talks | reverse %}
+
+<div class="container">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-24">
+                <h2>Recent Talks</h2>
+                <p>For my talks and presentations at <i>Pi and More</i>, most of which are in German, see <a
+                        href="https://piandmore.de/de/people/1" target="_blank">here</a>.</p>
+                <ul class="more-space-list">
+                    {% for link in talks %}
+                    <li>
+                        <b>{{ link.date|date:"%Y-%m-%d" }}</b> &nbsp; 
+                        {% if link.venue %}{{ link.venue }} {% endif %}| <a
+                            href="{{ link.url }}">{{ link.title }}</a> {% if link.tag %}<div
+                            class="label label-primary">{{ link.tag }}</div>{% endif %}
+
+
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+
 {% assign publications = site.publications | reverse %}
 
 <div class="container">
-    <div  class="container">
-        <div  class="row">
-            <div  class="col-sm-24">
-              <h2>Talks and Publications</h2>
-              <p>For my talks and presentations at <i>Pi and More</i>, most of which are in German, see <a href="https://piandmore.de/de/people/1" target="_blank">here</a>.</p>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-24">
+                <h2>Publications</h2>
                 <ul class="more-space-list">
                     {% for link in publications %}
                     <li>
-                        <b>{{ link.date|date:"%Y-%m-%d" }}</b> &nbsp; {% if link.type %}{{ link.type }} {% if link.venue %}@ {{ link.venue }} {% endif %}| {% endif %}<a href="{{ link.url }}">{{ link.title }}</a> {% if link.tag %}<div class="label label-primary">{{ link.tag }}</div>{% endif %}
-                        
-                        
+                        <b>{{ link.date|date:"%Y-%m-%d" }}</b> &nbsp; {% if link.type %}{{ link.type }}
+                        {% if link.venue %}@ {{ link.venue }} {% endif %}| {% endif %}<a
+                            href="{{ link.url }}">{{ link.title }}</a> {% if link.tag %}<div
+                            class="label label-primary">{{ link.tag }}</div>{% endif %}
+
+
                     </li>
                     {% endfor %}
                 </ul>

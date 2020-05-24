@@ -7,6 +7,8 @@ links:
     - type: play
       name: watch
       href: https://media.ccc.de/v/33c3-7827-on_the_security_and_privacy_of_modern_single_sign-on_in_the_web
+redirect_from:
+  - /publications/2016-12-28-on-the-security-of-sso/
 ---
 
 Many web sites allow users to log in with their Facebook or Google

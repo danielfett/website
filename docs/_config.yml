@@ -2,6 +2,8 @@ collections:
   footer_projects:
   publications:
     output: true
+  talks:
+    output: true
   
 permalink: pretty
 

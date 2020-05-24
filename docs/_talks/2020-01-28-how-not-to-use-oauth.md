@@ -7,6 +7,8 @@ links:
     - type: download
       name: download
       href: /download/secure-munich-talks-2020-how-not-to-use-oauth.pdf
+redirect_from:
+  - /publications/2020-01-28-how-not-to-use-oauth/
 ---
 
 [Secure Munich

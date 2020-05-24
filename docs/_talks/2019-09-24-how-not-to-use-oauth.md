@@ -7,6 +7,8 @@ links:
     - type: download
       name: download
       href: /download/secure-cologne-talks-2019-how-not-to-use-oauth.pdf
+redirect_from:
+  - /publications/2019-09-24-how-not-to-use-oauth/
 ---
 
 [Secure Cologne

@@ -7,6 +7,8 @@ links:
     - type: download
       name: download
       href: /download/oauth-2.0-security-reinforced.pdf
+redirect_from:
+  - /publications/2019-03-20-oauth-security-reinforced/
 ---
 
 This is the talk that I gave together with Torsten Lodderstedt during

@@ -13,6 +13,8 @@ links:
     - type: play
       name: watch (youtube)
       href: https://www.youtube.com/watch?v=sdpWVizuS70
+redirect_from:
+  - /publications/2019-08-10-how-not-to-use-oauth/
 ---
 
 <i>I am coauthoring the new security recommendations RFC for OAuth 2.0
