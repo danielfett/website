@@ -4,37 +4,48 @@ class: home
 ---
 
 <div class="container">
-    <div  class="container">
-        <div  class="row">
-            <div  class="col-sm-12">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
                 <h1><span class="h1-grey">Dr.</span> Daniel Fett</h1>
-
-		{{ content }}
-                
-		<h3>Latest Articles/Talks/Publications</h3>
-		<ul class="more-space-list">
-		{% assign items = site.posts | concat: site.publications | sort: 'date' | reverse %}
-		{% for link in items limit: 5 %}
-		<li>
-		  <b>{{ link.date|date:"%Y-%m-%d" }}</b> &nbsp; {% if link.type %}{{ link.type }} | {% endif %} <a href="{{ link.url }}">{{ link.title }}</a> {% if link.tag %}<div class="label label-primary">{{ link.tag }}</div>{% endif %}
-		</li>
-		{% endfor %}
-		</ul>
-		<p>(<a href="/publications">see all</a>)</p>
+                {{ content }}
             </div>
-            <div  class="col-sm-6">
-                <p style="text-align: center;"><img class="filer_image " alt="me.png" src="/img/danielfett.png" width="150" height="150" />
+            <div class="col-sm-6">
+                <p style="text-align: center;"><img class="filer_image " alt="me.png" src="/img/danielfett.png"
+                        width="150" height="150" />
                 </p>
             </div>
-            <div  class="col-sm-6">
-                <p><i class="fa fa-twitter-square">  </i> <a href="https://twitter.com/dfett42" class=" ">@dfett42</a></p>
-                <p><i class="fa fa-linkedin-square">  </i> <a href="https://www.linkedin.com/in/daniel-fett-737817110" class=" ">Daniel Fett</a></p>
-                <p><i class="fa fa-xing-square">  </i> <a href="https://www.xing.com/profile/Daniel_Fett2/cv" class=" ">Daniel Fett</a></p>
-                <p><i class="fa fa-github-square">  </i> <a href="https://github.com/danielfett/" class=" ">danielfett</a></p>
-                <p><i class="fa fa-bitbucket-square">  </i> <a href="https://bitbucket.org/webhamster/" class=" ">webhamster</a></p>
-                <p><i class="fa fa-envelope">  </i> <a href="mailto:kontakt@danielfett.de" class=" ">kontakt@danielfett.de</a></p>
+            <div class="col-sm-6">
+                <p><i class="fa fa-twitter-square"> </i> <a href="https://twitter.com/dfett42" class=" ">@dfett42</a>
+                </p>
+                <p><i class="fa fa-linkedin-square"> </i> <a href="https://www.linkedin.com/in/daniel-fett-737817110"
+                        class=" ">Daniel Fett</a></p>
+                <p><i class="fa fa-xing-square"> </i> <a href="https://www.xing.com/profile/Daniel_Fett2/cv"
+                        class=" ">Daniel Fett</a></p>
+                <p><i class="fa fa-github-square"> </i> <a href="https://github.com/danielfett/"
+                        class=" ">danielfett</a></p>
+                <p><i class="fa fa-bitbucket-square"> </i> <a href="https://bitbucket.org/webhamster/"
+                        class=" ">webhamster</a></p>
+                <p><i class="fa fa-envelope"> </i> <a href="mailto:kontakt@danielfett.de"
+                        class=" ">kontakt@danielfett.de</a></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-24">
+
+                <h3>Latest Articles/Talks/Publications</h3>
+                <ul class="more-space-list">
+                    {% assign items = site.posts | concat: site.publications | sort: 'date' | reverse %}
+                    {% for link in items limit: 5 %}
+                    <li>
+                        <b>{{ link.date|date:"%Y-%m-%d" }}</b> &nbsp; {% if link.type %}{{ link.type }} | {% endif %} <a
+                            href="{{ link.url }}">{{ link.title }}</a> {% if link.tag %}<div
+                            class="label label-primary">{{ link.tag }}</div>{% endif %}
+                    </li>
+                    {% endfor %}
+                </ul>
+                <p>(<a href="/publications">see all</a>)</p>
             </div>
         </div>
     </div>
 </div>
-
