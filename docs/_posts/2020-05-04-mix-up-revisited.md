@@ -45,7 +45,7 @@ The following two approaches can be used for this:
  * Encoding the authorization server's identity in the redirect_uri can help as well. In this case, the client compares the redirection endpoint where it expects the user to land with the one registered for the expected authorization server.
 
 
-<img src="/img/plantuml/1d2a774e6cd11acab7674bc8658f52947a1565146bf8c730d0ad70892b78af0b.svg" class="svg">
+<img src="/img/plantuml/bb4753108eefc5721f6a0f1d8159fa26318df4af0abaf4854a88f71ea6b85458.svg" class="svg">
 
 **Why does that work?**
 

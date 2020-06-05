@@ -119,7 +119,7 @@ participant honest.com
 
 Browser -> client.com: Use https://attacker.com
 client.com -> Browser: Location: https://attacker.com/auth\n\
-        ?redirect_uri=https://client.com/<font color=blue>as/honest.com</font>\n\
+        ?redirect_uri=https://client.com/<font color=blue>as/attacker.com</font>\n\
             &client_id=client_at_attacker\n\
             &code_challenge=sha256(n)\n\
             &state=s\n\
