@@ -5,6 +5,8 @@ collections:
   talks:
     output: true
   
+future: true
+  
 permalink: pretty
 
 plugins:
