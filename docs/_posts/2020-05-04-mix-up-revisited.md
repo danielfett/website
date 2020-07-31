@@ -24,7 +24,7 @@ Even if all connections are properly secured via TLS, the following attack can b
 
 In the attack, the attacker's authorization server redirects the user to an honest OP's authorization server. The attacker replaces the `client_id` provided by the client with the one that the client uses for `honest.com` and replaces the `code_challenge` parameter with a different value.
 
-After the uses authorizes access, the attacker is able to capture the code that was used in this flow, as it is sent to the attacker's token endpoint.
+After the user authorizes access, the attacker is able to capture the code that was used in this flow, as it is sent to the attacker's token endpoint.
 
 The code is bound to the PKCE challenge known to the attacker. If the attacker has chosen k to be a value from another flow with the same client and honest.com as AS, the attacker can inject the code in that flow. (This requires an "online" attack, i.e., the attacker cannot collect codes first and then redeem them.)
 
