@@ -3,6 +3,11 @@ layout: overview-hwsw
 title: Hardware and Software
 visual: default-keinefarbe
 projects:
+  - title: SkyPi Raspberry Pi Startrail Tool
+    teaser: 'SkyPi is a software to create timelapse and startrail images using a Raspberry Pi camera.'
+    href: https://github.com/danielfett/skypi
+    thumbnail: /img/hwsw/skypi.jpg
+    external: true
   - title: Electronic Dart Board
     teaser: 'The electronic dart board with superpowers: An interactive web interface, a "dartabase", adaptive background music, etc. - powered by an Arduino and a Raspberry Pi!'
     href: /hardware-and-software/dartboard/
