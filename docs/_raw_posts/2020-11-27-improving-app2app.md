@@ -4,7 +4,7 @@ layout: publication
 toc: yes
 type: Best Practice
 ---
-*By [Fabian Hauck](https://www.linkedin.com/in/fabian-hauck/) ([yes.com](https://www.yes.com)), Daniel Fett ([yes.com](https://www.yes.com)), [Joseph Heenan](https://twitter.com/josephheenan) ([Authlete](https://www.authlete.com/))*
+*By [Fabian Hauck](https://www.linkedin.com/in/fabian-hauck/) ([yes.com](https://www.yes.com)), [Joseph Heenan](https://twitter.com/josephheenan) ([Authlete](https://www.authlete.com/)), Daniel Fett ([yes.com](https://www.yes.com))*
 
 OAuth flows on mobile devices can benefit a lot from native apps. With native
 apps, for example, it is possible to use already existing sessions and biometric
