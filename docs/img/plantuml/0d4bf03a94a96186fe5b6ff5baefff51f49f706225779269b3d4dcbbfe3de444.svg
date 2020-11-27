@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="579px" preserveAspectRatio="none" style="width:1376px;height:579px;" version="1.1" viewBox="0 0 1376 579" width="1376px" zoomAndPan="magnify"><defs/><g><text fill="#000000" font-family="sans-serif" font-size="18" lengthAdjust="spacingAndGlyphs" textLength="339" x="514" y="26.708">OpenID Provider App to Relying Party</text><rect fill="#ADD8E6" height="513.4531" style="stroke: #FFFFFF; stroke-width: 1.0;" width="490" x="4" y="38.9531"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="98" x="200" y="51.02">Relying Party</text><rect fill="#90EE90" height="513.4531" style="stroke: #FFFFFF; stroke-width: 1.0;" width="525.5" x="837.5" y="38.9531"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="121" x="1039.75" y="51.02">OpenID Provider</text><rect fill="#FFFFFF" height="394.7266" style="stroke: #000000; stroke-width: 2.0;" width="933" x="175" y="106.3828"/><rect fill="#FFFFFF" height="160.6641" style="stroke: none; stroke-width: 1.0;" width="933" x="175" y="340.4453"/><line style="stroke: #AAAAAA; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="91" x2="91" y1="89.3828" y2="518.1094"/><line style="stroke: #AAAAAA; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="266" x2="266" y1="89.3828" y2="518.1094"/><line style="stroke: #AAAAAA; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="423" x2="423" y1="89.3828" y2="518.1094"/><line style="stroke: #AAAAAA; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="593" x2="593" y1="89.3828" y2="518.1094"/><line style="stroke: #AAAAAA; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="919.5" x2="919.5" y1="89.3828" y2="518.1094"/><line style="stroke: #AAAAAA; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="1103" x2="1103" y1="89.3828" y2="518.1094"/><line style="stroke: #AAAAAA; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="1282" x2="1282" y1="89.3828" y2="518.1094"/><rect fill="#375A7F" height="30.2969" style="stroke: #375A7F; stroke-width: 1.5;" width="167" x="8" y="58.0859"/><text fill="#FFFFFF" font-family="Roboto" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="153" x="15" y="78.0811">Relying Party Backend</text><rect fill="#375A7F" height="30.2969" style="stroke: #375A7F; stroke-width: 1.5;" width="167" x="8" y="517.1094"/><text fill="#FFFFFF" font-family="Roboto" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="153" x="15" y="537.1045">Relying Party Backend</text><rect fill="#375A7F" height="30.2969" style="stroke: #375A7F; stroke-width: 1.5;" width="162" x="185" y="58.0859"/><text fill="#FFFFFF" font-family="Roboto" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="148" x="192" y="78.0811">Relying Party Website</text><rect fill="#375A7F" height="30.2969" style="stroke: #375A7F; stroke-width: 1.5;" width="162" x="185" y="517.1094"/><text fill="#FFFFFF" font-family="Roboto" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="148" x="192" y="537.1045">Relying Party Website</text><rect fill="#375A7F" height="30.2969" style="stroke: #375A7F; stroke-width: 1.5;" width="133" x="357" y="58.0859"/><text fill="#FFFFFF" font-family="Roboto" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="119" x="364" y="78.0811">Relying Party App</text><rect fill="#375A7F" height="30.2969" style="stroke: #375A7F; stroke-width: 1.5;" width="133" x="357" y="517.1094"/><text fill="#FFFFFF" font-family="Roboto" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="119" x="364" y="537.1045">Relying Party App</text><rect fill="#375A7F" height="30.2969" style="stroke: #375A7F; stroke-width: 1.5;" width="34" x="576" y="58.0859"/><text fill="#FFFFFF" font-family="Roboto" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="20" x="583" y="78.0811">OS</text><rect fill="#375A7F" height="30.2969" style="stroke: #375A7F; stroke-width: 1.5;" width="34" x="576" y="517.1094"/><text fill="#FFFFFF" font-family="Roboto" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="20" x="583" y="537.1045">OS</text><rect fill="#375A7F" height="30.2969" style="stroke: #375A7F; stroke-width: 1.5;" width="157" x="841.5" y="58.0859"/><text fill="#FFFFFF" font-family="Roboto" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="143" x="848.5" y="78.0811">OpenID Provider App</text><rect fill="#375A7F" height="30.2969" style="stroke: #375A7F; stroke-width: 1.5;" width="157" x="841.5" y="517.1094"/><text fill="#FFFFFF" font-family="Roboto" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="143" x="848.5" y="537.1045">OpenID Provider App</text><rect fill="#375A7F" height="30.2969" style="stroke: #375A7F; stroke-width: 1.5;" width="186" x="1010" y="58.0859"/><text fill="#FFFFFF" font-family="Roboto" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="172" x="1017" y="78.0811">OpenID Provider Website</text><rect fill="#375A7F" height="30.2969" style="stroke: #375A7F; stroke-width: 1.5;" width="186" x="1010" y="517.1094"/><text fill="#FFFFFF" font-family="Roboto" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="172" x="1017" y="537.1045">OpenID Provider Website</text><rect fill="#375A7F" height="30.2969" style="stroke: #375A7F; stroke-width: 1.5;" width="153" x="1206" y="58.0859"/><text fill="#FFFFFF" font-family="Roboto" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="139" x="1213" y="78.0811">Authorization Server</text><rect fill="#375A7F" height="30.2969" style="stroke: #375A7F; stroke-width: 1.5;" width="153" x="1206" y="517.1094"/><text fill="#FFFFFF" font-family="Roboto" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="139" x="1213" y="537.1045">Authorization Server</text><path d="M175,106.3828 L239,106.3828 L239,113.3828 L229,123.3828 L175,123.3828 L175,106.3828 " fill="#EEEEEE" style="stroke: #000000; stroke-width: 1.0;"/><rect fill="none" height="394.7266" style="stroke: #000000; stroke-width: 2.0;" width="933" x="175" y="106.3828"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="19" x="190" y="119.4497">alt</text><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="246" x="254" y="118.5933">[callingActivity?.packageName != null]</text><polygon fill="#375A7F" points="277,140.6484,267,144.6484,277,148.6484,273,144.6484" style="stroke: #375A7F; stroke-width: 1.0;"/><line style="stroke: #375A7F; stroke-width: 1.0;" x1="271" x2="919" y1="144.6484" y2="144.6484"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="202" x="283" y="139.5825">GET /.well-known/assetlinks.json</text><polygon fill="#375A7F" points="908,169.7813,918,173.7813,908,177.7813,912,173.7813" style="stroke: #375A7F; stroke-width: 1.0;"/><line style="stroke: #375A7F; stroke-width: 1.0; stroke-dasharray: 2.0,2.0;" x1="266" x2="914" y1="173.7813" y2="173.7813"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="280" x="273" y="168.7153">return (packageName, baseCertFingerprint)</text><polygon fill="#375A7F" points="604,198.9141,594,202.9141,604,206.9141,600,202.9141" style="stroke: #375A7F; stroke-width: 1.0;"/><line style="stroke: #375A7F; stroke-width: 1.0;" x1="598" x2="919" y1="202.9141" y2="202.9141"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="286" x="610" y="197.8481">getCertificate(callingActivity?.packageName)</text><polygon fill="#375A7F" points="908,228.0469,918,232.0469,908,236.0469,912,232.0469" style="stroke: #375A7F; stroke-width: 1.0;"/><line style="stroke: #375A7F; stroke-width: 1.0; stroke-dasharray: 2.0,2.0;" x1="593" x2="914" y1="232.0469" y2="232.0469"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="184" x="600" y="226.981">return (foundCertFingerprint)</text><line style="stroke: #375A7F; stroke-width: 1.0;" x1="920" x2="962" y1="261.1797" y2="261.1797"/><line style="stroke: #375A7F; stroke-width: 1.0;" x1="962" x2="962" y1="261.1797" y2="274.1797"/><line style="stroke: #375A7F; stroke-width: 1.0;" x1="921" x2="962" y1="274.1797" y2="274.1797"/><polygon fill="#375A7F" points="931,270.1797,921,274.1797,931,278.1797,927,274.1797" style="stroke: #375A7F; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="169" x="927" y="256.1138">verify foundCertFingerprint</text><line style="stroke: #375A7F; stroke-width: 1.0;" x1="593" x2="603" y1="303.3125" y2="299.3125"/><line style="stroke: #375A7F; stroke-width: 1.0;" x1="593" x2="603" y1="303.3125" y2="307.3125"/><line style="stroke: #375A7F; stroke-width: 1.0;" x1="593" x2="919" y1="303.3125" y2="303.3125"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="106" x="610" y="298.2466">setResult(intent)</text><line style="stroke: #375A7F; stroke-width: 1.0;" x1="423.5" x2="433.5" y1="332.4453" y2="328.4453"/><line style="stroke: #375A7F; stroke-width: 1.0;" x1="423.5" x2="433.5" y1="332.4453" y2="336.4453"/><line style="stroke: #375A7F; stroke-width: 1.0;" x1="423.5" x2="592" y1="332.4453" y2="332.4453"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="106" x="440.5" y="327.3794">setResult(intent)</text><line style="stroke: #000000; stroke-width: 1.0; stroke-dasharray: 2.0,2.0;" x1="175" x2="1108" y1="341.4453" y2="341.4453"/><polygon fill="#375A7F" points="604,359.5781,594,363.5781,604,367.5781,600,363.5781" style="stroke: #375A7F; stroke-width: 1.0;"/><line style="stroke: #375A7F; stroke-width: 1.0;" x1="598" x2="919" y1="363.5781" y2="363.5781"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="221" x="610" y="358.5122">getDefaultBrowserPackageName()</text><polygon fill="#375A7F" points="908,388.7109,918,392.7109,908,396.7109,912,392.7109" style="stroke: #375A7F; stroke-width: 1.0;"/><line style="stroke: #375A7F; stroke-width: 1.0; stroke-dasharray: 2.0,2.0;" x1="593" x2="914" y1="392.7109" y2="392.7109"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="301" x="600" y="387.645">return (browserPackageName, cert_fingerprint)</text><line style="stroke: #375A7F; stroke-width: 1.0;" x1="920" x2="962" y1="421.8438" y2="421.8438"/><line style="stroke: #375A7F; stroke-width: 1.0;" x1="962" x2="962" y1="421.8438" y2="434.8438"/><line style="stroke: #375A7F; stroke-width: 1.0;" x1="921" x2="962" y1="434.8438" y2="434.8438"/><polygon fill="#375A7F" points="931,430.8438,921,434.8438,931,438.8438,927,434.8438" style="stroke: #375A7F; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="135" x="927" y="416.7778">verify cert_fingerprint</text><line style="stroke: #375A7F; stroke-width: 1.0;" x1="593" x2="603" y1="463.9766" y2="459.9766"/><line style="stroke: #375A7F; stroke-width: 1.0;" x1="593" x2="603" y1="463.9766" y2="467.9766"/><line style="stroke: #375A7F; stroke-width: 1.0;" x1="593" x2="919" y1="463.9766" y2="463.9766"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="303" x="610" y="458.9106">Intent(URL).setPackage(browserPackageName)</text><line style="stroke: #375A7F; stroke-width: 1.0;" x1="266" x2="276" y1="493.1094" y2="489.1094"/><line style="stroke: #375A7F; stroke-width: 1.0;" x1="266" x2="276" y1="493.1094" y2="497.1094"/><line style="stroke: #375A7F; stroke-width: 1.0;" x1="266" x2="592" y1="493.1094" y2="493.1094"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="303" x="283" y="488.0435">Intent(URL).setPackage(browserPackageName)</text><text fill="#888888" font-family="sans-serif" font-size="10" lengthAdjust="spacingAndGlyphs" textLength="61" x="1303" y="565.6885">danielfett.de</text><!--MD5=[e016e967f7d93fdfa8ae8c37973f780f]
+@startuml
+hide stereotype
+skinparam shadowing false
+skinparam sequence {
+ArrowColor #375a7f
+LifeLineBorderColor #aaa
+BoundaryBackgroundColor #f00
+
+ParticipantBorderColor #375a7f
+ParticipantBackgroundColor #375a7f
+ParticipantFontColor #fff
+ParticipantFontName Roboto
+ParticipantFontSize 14
+
+BoxBackgroundColor #f0f0ff
+BoxBorderColor transparent
+ParticipantBackgroundColor<<Attacker>> #F08080
+}
+
+skinparam note {
+BackgroundColor #CEE1F5
+BorderColor #CEE1F5
+FontColor #000
+
+BackgroundColor<<warning>> #FFCEB5
+BorderColor<<warning>> #FFCEB5
+
+BackgroundColor<<ok>> #C6EAA6
+BorderColor<<ok>> #C6EAA6
+}
+
+right footer danielfett.de
+title OpenID Provider App to Relying Party
+
+box "Relying Party" #LightBlue
+participant "Relying Party Backend" as rpb
+participant "Relying Party Website" as rpw
+participant "Relying Party App" as rpa
+end box
+participant "OS" as os
+box "OpenID Provider" #LightGreen
+participant "OpenID Provider App" as opa
+participant "OpenID Provider Website" as opw
+participant "Authorization Server" as as
+end box
+
+alt callingActivity?.packageName != null
+   rpw <- opa: GET /.well-known/assetlinks.json
+   rpw - -> opa: return (packageName, baseCertFingerprint)
+   os <- opa: getCertificate(callingActivity?.packageName)
+   os - -> opa: return (foundCertFingerprint)
+   opa -> opa: verify foundCertFingerprint
+   os <<- opa: setResult(intent)
+   rpa <<- os: setResult(intent)
+else
+   os <- opa: getDefaultBrowserPackageName()
+   os - -> opa: return (browserPackageName, cert_fingerprint)
+   opa -> opa: verify cert_fingerprint
+   os <<- opa: Intent(URL).setPackage(browserPackageName)
+   rpw <<- os: Intent(URL).setPackage(browserPackageName)
+end
+@enduml
+
+PlantUML version 1.2020.08(Sun Apr 26 14:08:22 UTC 2020)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Java Version: 1.8.0_252-b09
+Operating System: Linux
+Default Encoding: UTF-8
+Language: en
+Country: null
+--></g></svg>

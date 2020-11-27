@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="329px" preserveAspectRatio="none" style="width:1251px;height:329px;" version="1.1" viewBox="0 0 1251 329" width="1251px" zoomAndPan="magnify"><defs/><g><text fill="#000000" font-family="sans-serif" font-size="18" lengthAdjust="spacingAndGlyphs" textLength="346" x="448.25" y="26.708">OpenID Provider Web to Relying Party</text><rect fill="#ADD8E6" height="263.3906" style="stroke: #FFFFFF; stroke-width: 1.0;" width="521.5" x="4" y="38.9531"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="98" x="215.75" y="51.02">Relying Party</text><rect fill="#90EE90" height="263.3906" style="stroke: #FFFFFF; stroke-width: 1.0;" width="564.5" x="674" y="38.9531"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="121" x="895.75" y="51.02">OpenID Provider</text><line style="stroke: #AAAAAA; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="91" x2="91" y1="89.3828" y2="268.0469"/><line style="stroke: #AAAAAA; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="297.5" x2="297.5" y1="89.3828" y2="268.0469"/><line style="stroke: #AAAAAA; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="454.5" x2="454.5" y1="89.3828" y2="268.0469"/><line style="stroke: #AAAAAA; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="651" x2="651" y1="89.3828" y2="268.0469"/><line style="stroke: #AAAAAA; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="756" x2="756" y1="89.3828" y2="268.0469"/><line style="stroke: #AAAAAA; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="938" x2="938" y1="89.3828" y2="268.0469"/><line style="stroke: #AAAAAA; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="1157.5" x2="1157.5" y1="89.3828" y2="268.0469"/><rect fill="#375A7F" height="30.2969" style="stroke: #375A7F; stroke-width: 1.5;" width="167" x="8" y="58.0859"/><text fill="#FFFFFF" font-family="Roboto" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="153" x="15" y="78.0811">Relying Party Backend</text><rect fill="#375A7F" height="30.2969" style="stroke: #375A7F; stroke-width: 1.5;" width="167" x="8" y="267.0469"/><text fill="#FFFFFF" font-family="Roboto" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="153" x="15" y="287.042">Relying Party Backend</text><rect fill="#375A7F" height="30.2969" style="stroke: #375A7F; stroke-width: 1.5;" width="162" x="216.5" y="58.0859"/><text fill="#FFFFFF" font-family="Roboto" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="148" x="223.5" y="78.0811">Relying Party Website</text><rect fill="#375A7F" height="30.2969" style="stroke: #375A7F; stroke-width: 1.5;" width="162" x="216.5" y="267.0469"/><text fill="#FFFFFF" font-family="Roboto" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="148" x="223.5" y="287.042">Relying Party Website</text><rect fill="#375A7F" height="30.2969" style="stroke: #375A7F; stroke-width: 1.5;" width="133" x="388.5" y="58.0859"/><text fill="#FFFFFF" font-family="Roboto" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="119" x="395.5" y="78.0811">Relying Party App</text><rect fill="#375A7F" height="30.2969" style="stroke: #375A7F; stroke-width: 1.5;" width="133" x="388.5" y="267.0469"/><text fill="#FFFFFF" font-family="Roboto" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="119" x="395.5" y="287.042">Relying Party App</text><rect fill="#375A7F" height="30.2969" style="stroke: #375A7F; stroke-width: 1.5;" width="34" x="634" y="58.0859"/><text fill="#FFFFFF" font-family="Roboto" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="20" x="641" y="78.0811">OS</text><rect fill="#375A7F" height="30.2969" style="stroke: #375A7F; stroke-width: 1.5;" width="34" x="634" y="267.0469"/><text fill="#FFFFFF" font-family="Roboto" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="20" x="641" y="287.042">OS</text><rect fill="#375A7F" height="30.2969" style="stroke: #375A7F; stroke-width: 1.5;" width="157" x="678" y="58.0859"/><text fill="#FFFFFF" font-family="Roboto" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="143" x="685" y="78.0811">OpenID Provider App</text><rect fill="#375A7F" height="30.2969" style="stroke: #375A7F; stroke-width: 1.5;" width="157" x="678" y="267.0469"/><text fill="#FFFFFF" font-family="Roboto" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="143" x="685" y="287.042">OpenID Provider App</text><rect fill="#375A7F" height="30.2969" style="stroke: #375A7F; stroke-width: 1.5;" width="186" x="845" y="58.0859"/><text fill="#FFFFFF" font-family="Roboto" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="172" x="852" y="78.0811">OpenID Provider Website</text><rect fill="#375A7F" height="30.2969" style="stroke: #375A7F; stroke-width: 1.5;" width="186" x="845" y="267.0469"/><text fill="#FFFFFF" font-family="Roboto" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="172" x="852" y="287.042">OpenID Provider Website</text><rect fill="#375A7F" height="30.2969" style="stroke: #375A7F; stroke-width: 1.5;" width="153" x="1081.5" y="58.0859"/><text fill="#FFFFFF" font-family="Roboto" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="139" x="1088.5" y="78.0811">Authorization Server</text><rect fill="#375A7F" height="30.2969" style="stroke: #375A7F; stroke-width: 1.5;" width="153" x="1081.5" y="267.0469"/><text fill="#FFFFFF" font-family="Roboto" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="139" x="1088.5" y="287.042">Authorization Server</text><polygon fill="#375A7F" points="949,116.5156,939,120.5156,949,124.5156,945,120.5156" style="stroke: #375A7F; stroke-width: 1.0;"/><line style="stroke: #375A7F; stroke-width: 1.0;" x1="943" x2="1157" y1="120.5156" y2="120.5156"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="196" x="955" y="115.4497">Authorization Response (code)</text><polygon fill="#375A7F" points="102.5,145.6484,92.5,149.6484,102.5,153.6484,98.5,149.6484" style="stroke: #375A7F; stroke-width: 1.0;"/><line style="stroke: #375A7F; stroke-width: 1.0;" x1="96.5" x2="937" y1="149.6484" y2="149.6484"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="196" x="108.5" y="144.5825">Authorization Response (code)</text><line style="stroke: #375A7F; stroke-width: 1.0;" x1="91.5" x2="133.5" y1="178.7813" y2="178.7813"/><line style="stroke: #375A7F; stroke-width: 1.0;" x1="133.5" x2="133.5" y1="178.7813" y2="191.7813"/><line style="stroke: #375A7F; stroke-width: 1.0;" x1="92.5" x2="133.5" y1="191.7813" y2="191.7813"/><polygon fill="#375A7F" points="102.5,187.7813,92.5,191.7813,102.5,195.7813,98.5,191.7813" style="stroke: #375A7F; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="192" x="98.5" y="173.7153">change url to intent:// scheme</text><polygon fill="#375A7F" points="639,216.9141,649,220.9141,639,224.9141,643,220.9141" style="stroke: #375A7F; stroke-width: 1.0;"/><line style="stroke: #375A7F; stroke-width: 1.0;" x1="91.5" x2="645" y1="220.9141" y2="220.9141"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="378" x="98.5" y="215.8481">intent://...?code=...#Intent;scheme=https;package=...;end</text><polygon fill="#375A7F" points="466,246.0469,456,250.0469,466,254.0469,462,250.0469" style="stroke: #375A7F; stroke-width: 1.0;"/><line style="stroke: #375A7F; stroke-width: 1.0;" x1="460" x2="650" y1="250.0469" y2="250.0469"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="172" x="472" y="244.981">Intent(URL).setPackage(...)</text><text fill="#888888" font-family="sans-serif" font-size="10" lengthAdjust="spacingAndGlyphs" textLength="61" x="1178.5" y="315.626">danielfett.de</text><!--MD5=[c4b968295b85bafe7a8940e595fc78c6]
+@startuml
+hide stereotype
+skinparam shadowing false
+skinparam sequence {
+ArrowColor #375a7f
+LifeLineBorderColor #aaa
+BoundaryBackgroundColor #f00
+
+ParticipantBorderColor #375a7f
+ParticipantBackgroundColor #375a7f
+ParticipantFontColor #fff
+ParticipantFontName Roboto
+ParticipantFontSize 14
+
+BoxBackgroundColor #f0f0ff
+BoxBorderColor transparent
+ParticipantBackgroundColor<<Attacker>> #F08080
+}
+
+skinparam note {
+BackgroundColor #CEE1F5
+BorderColor #CEE1F5
+FontColor #000
+
+BackgroundColor<<warning>> #FFCEB5
+BorderColor<<warning>> #FFCEB5
+
+BackgroundColor<<ok>> #C6EAA6
+BorderColor<<ok>> #C6EAA6
+}
+
+right footer danielfett.de
+title OpenID Provider Web to Relying Party
+
+box "Relying Party" #LightBlue
+participant "Relying Party Backend" as rpb
+participant "Relying Party Website" as rpw
+participant "Relying Party App" as rpa
+end box
+participant "OS" as os
+box "OpenID Provider" #LightGreen
+participant "OpenID Provider App" as opa
+participant "OpenID Provider Website" as opw
+participant "Authorization Server" as as
+end box
+
+opw <- as: Authorization Response (code)
+rpb <- opw: Authorization Response (code)
+rpb -> rpb: change url to intent:// scheme
+rpb -> os: intent://...?code=...#Intent;scheme=https;package=...;end
+rpa <- os: Intent(URL).setPackage(...)
+@enduml
+
+PlantUML version 1.2020.08(Sun Apr 26 14:08:22 UTC 2020)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Java Version: 1.8.0_252-b09
+Operating System: Linux
+Default Encoding: UTF-8
+Language: en
+Country: null
+--></g></svg>
