@@ -7,7 +7,7 @@ redirect_from:
   - /de/projekte/
 projects:
   - title: OAuth Security Workshop
-    href: https://sec.uni-stuttgart.de/events/osw2019
+    href: https://oauth.secworkshop.events
     thumbnail: /img/projects/osw.png
     external: true
     teaser: |
@@ -17,7 +17,7 @@ projects:
       and industry. The OSW was jointly initiated by the OAuth Working
       Group and my group at the University of Trier after we
       communicated our newly found attacks to the working group in
-      2015. I was or am involved in the organization of the events 2016, 2019, and 2020.
+      2015. I'm one of the main organizers of the events since 2019.
   - title: Pi and More
     external: true
     thumbnail: /img/projects/piandmore.png
