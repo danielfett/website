@@ -24,38 +24,7 @@ layout: publication
 
 <p>And since a video is worth more than a thousand pictures:</p>
 
-<div class="video-wrapper js-video-wrapper" itemprop="video" itemscope itemtype="http://schema.org/VideoObject" data-video-id="w0zlIA1wd2Y" data-video-title="T-Bot 1.0 in Aktion">
-    <meta itemprop="name" content="T-Bot 1.0 in Aktion" />
-    <meta itemprop="duration" content="PT1M28S" />
-    <meta itemprop="thumbnailUrl" content="https://i.ytimg.com/vi/w0zlIA1wd2Y/maxresdefault.jpg" />
-    <meta itemprop="embedURL" content="https://www.youtube.com/embed/w0zlIA1wd2Y" />
-    <meta itemprop="uploadDate" content="2014-11-22T19:44:16.000Z" />
-    <meta itemprop="height" content="720" />
-    <meta itemprop="width" content="1280" />
-    <meta itemprop="description" content="Der T-Bot ist eine hocheffiziente, nachhaltige, professionelle,
-und exklusive Lösung, um Kräuter- und Fruchtheißgetränke auf
-Wasserbasis präzise zuzubereiten ;-)" />
-
-    <div class="poster js-video-trigger js-video-poster" style="background-image: url(https://i.ytimg.com/vi/w0zlIA1wd2Y/maxresdefault.jpg);">
-        <div class="playbutton -light">
-            <svg focusable="false" width="21" height="20" viewBox="0 0 21 20" xmlns="http://www.w3.org/2000/svg" class="icon-playbutton">
-                <path class="fill-color" d="M10.5 0C4.977 0 .5 4.477.5 10s4.477 10 10 10 10-4.477 10-10-4.477-10-10-10zm-2 14V6l6 4-6 4z" fill="#ffffff" fill-rule="evenodd" opacity=".55"></path>
-            </svg>
-        </div>
-    </div>
-    <div class="video js-video-target"></div>
-    <div class="endscreen js-video-endscreen">
-        <span class="endscreen-close">
-            <button class="endscreen-close-button js-endscreen-close"></button>
-        </span>
-        <div class="endscreen-content">
-            
-        </div>
-    </div>
-</div>
-
-
-
+<a href="https://www.youtube.com/watch?v=w0zlIA1wd2Y">Watch on Youtube</a>
 
 <p>So what does this contraption do for you?</p>
 

@@ -44,39 +44,7 @@ galleries:
 
 <p>In the video, you can see the components of pidart (the Arduino and the Dartboard, and the Pi sitting under a table), and some scenes from a typical gameplay. Not shown are the "advanced" features, like skipping players. </p>
 
-<div class="video-wrapper js-video-wrapper" itemprop="video" itemscope itemtype="http://schema.org/VideoObject" data-video-id="0lc08s65v6k" data-video-title="pidart: An Electronic Dart Board with Superpowers">
-    <meta itemprop="name" content="pidart: An Electronic Dart Board with Superpowers" />
-    <meta itemprop="duration" content="PT1M33S" />
-    <meta itemprop="thumbnailUrl" content="https://i.ytimg.com/vi/0lc08s65v6k/maxresdefault.jpg" />
-    <meta itemprop="embedURL" content="https://www.youtube.com/embed/0lc08s65v6k" />
-    <meta itemprop="uploadDate" content="2014-03-17T18:35:54.000Z" />
-    <meta itemprop="height" content="720" />
-    <meta itemprop="width" content="1280" />
-    <meta itemprop="description" content="pidart is a Raspberry Pi driven electronic dart board. For more information on the pidart project, see http://danielfett.de/privat,blog,electronic-dart-board
-
-In this video, you can see the components of pidart (the Arduino and the Dartboard, and the Pi sitting under a table), and some scenes from a typical gameplay. Not shown are the &quot;advanced&quot; features, like skipping players." />
-
-    <div class="poster js-video-trigger js-video-poster" style="background-image: url(https://i.ytimg.com/vi/0lc08s65v6k/maxresdefault.jpg);">
-        <div class="playbutton -light">
-            <svg focusable="false" width="21" height="20" viewBox="0 0 21 20" xmlns="http://www.w3.org/2000/svg" class="icon-playbutton">
-                <path class="fill-color" d="M10.5 0C4.977 0 .5 4.477.5 10s4.477 10 10 10 10-4.477 10-10-4.477-10-10-10zm-2 14V6l6 4-6 4z" fill="#ffffff" fill-rule="evenodd" opacity=".55"></path>
-            </svg>
-        </div>
-    </div>
-    <div class="video js-video-target"></div>
-    <div class="endscreen js-video-endscreen">
-        <span class="endscreen-close">
-            <button class="endscreen-close-button js-endscreen-close"></button>
-        </span>
-        <div class="endscreen-content">
-            
-        </div>
-    </div>
-</div>
-
-
-
-
+<a href="https://www.youtube.com/watch?v=0lc08s65v6k">Watch on Youtube</a>
 
 <h2>Some Technical Background</h2>
 
