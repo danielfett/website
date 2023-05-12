@@ -3,13 +3,8 @@ layout: publication
 title: "Next-Gen Authorization Throwdown: It's Not Your Grandfather's OAuth"
 type: Panelist
 venue: Identiverse 2020
-links:
-    - type: external-link
-      name: attend (onlinexperiences.com)
-      href: https://onlinexperiences.com/Launch/Event/ShowKey=96655
 ---
 
-**This even will be streamed with live Q&A on July 14, 2020, 16:00 UTC.**
 
 Panel with George Fletcher, Eve Maler, Justin Richer, Jake Feasel 
 
