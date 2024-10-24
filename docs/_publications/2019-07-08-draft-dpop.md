@@ -1,19 +1,13 @@
 ---
 title: OAuth 2.0 Demonstration of Proof-of-Possession at the Application Layer
-type: RFC
-tag: Work in Progress
+type: IETF RFC
+#tag: Work in Progress
+tag: RFC9449
 layout: publication
 links:
     - name: IETF
       type: external-link
-      href: https://tools.ietf.org/html/draft-fett-oauth-dpop
-    - name: Repository
-      type: external-link
-      href: https://github.com/webhamster/draft-dpop
+      href: https://datatracker.ietf.org/doc/html/rfc9449
 ---
 
-**Abstract**: This document defines an application-level
-sender-constraint mechanism for OAuth 2.0 access tokens and refresh
-tokens that can be applied when neither mTLS nor OAuth Token Binding
-are utilized. It achieves proof-of-possession using a public/private
-key pair.
+**Abstract**: This document describes a mechanism for sender-constraining OAuth 2.0 tokens via a proof-of-possession mechanism on the application level. This mechanism allows for the detection of replay attacks with access and refresh tokens.
